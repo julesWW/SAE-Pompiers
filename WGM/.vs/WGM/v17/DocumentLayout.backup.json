@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|d:\\users\\jules\\documents\\sae\\my-awesome-project\\wgm\\wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|D:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -28,9 +28,10 @@
               "RelativeDocumentMoniker": "WGM\\Form1.cs",
               "ToolTip": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs",
               "RelativeToolTip": "WGM\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T08:03:12.936Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {

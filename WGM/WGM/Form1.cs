@@ -19,6 +19,7 @@ namespace WGM
 
         private void btnQuitter_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("C'est ciao");
             Application.Exit();
         }
     }
