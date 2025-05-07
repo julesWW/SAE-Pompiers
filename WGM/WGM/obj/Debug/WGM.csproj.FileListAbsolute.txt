@@ -1,0 +1,10 @@
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\bin\Debug\WGM.exe.config
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\bin\Debug\WGM.exe
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\bin\Debug\WGM.pdb
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.AssemblyReference.cache
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.Form1.resources
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.Properties.Resources.resources
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.GenerateResource.cache
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.CoreCompileInputs.cache
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.exe
+d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.pdb
