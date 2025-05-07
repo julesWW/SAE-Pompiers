@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\",
+  "WorkspaceRootPath": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|d:\\users\\jules\\documents\\sae\\my-awesome-project\\wgm\\wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|D:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,16 +18,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs",
               "RelativeDocumentMoniker": "WGM\\Form1.cs",
-              "ToolTip": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs",
-              "RelativeToolTip": "WGM\\Form1.cs",
+              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs*",
+              "RelativeToolTip": "WGM\\Form1.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T08:03:12.936Z",
@@ -36,12 +36,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs",
               "RelativeDocumentMoniker": "WGM\\Form1.cs",
-              "ToolTip": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs [Design]",
-              "RelativeToolTip": "WGM\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Form1.cs [Design]*",
+              "RelativeToolTip": "WGM\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T07:30:23.79Z",
               "EditorCaption": " [Design]"
