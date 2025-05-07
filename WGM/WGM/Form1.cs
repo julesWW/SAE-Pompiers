@@ -16,5 +16,10 @@ namespace WGM
         {
             InitializeComponent();
         }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
