@@ -8,3 +8,13 @@ d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.Gen
 d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.CoreCompileInputs.cache
 d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.exe
 d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.pdb
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\WGM.exe.config
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\WGM.exe
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\WGM.pdb
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.AssemblyReference.cache
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.Form1.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.Properties.Resources.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.GenerateResource.cache
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.CoreCompileInputs.cache
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.exe
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.pdb

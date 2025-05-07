@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnQuitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -36,13 +37,17 @@
             this.btnQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuitter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuitter.BackgroundImage")));
+            this.btnQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuitter.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQuitter.Location = new System.Drawing.Point(27, 25);
+            this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitter.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnQuitter.Location = new System.Drawing.Point(27, 526);
             this.btnQuitter.Name = "btnQuitter";
-            this.btnQuitter.Size = new System.Drawing.Size(739, 399);
+            this.btnQuitter.Size = new System.Drawing.Size(175, 85);
             this.btnQuitter.TabIndex = 0;
-            this.btnQuitter.Text = "Quitter";
-            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Text = "             Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = false;
             this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // Form1
@@ -50,7 +55,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1094, 637);
             this.Controls.Add(this.btnQuitter);
             this.Name = "Form1";
             this.Text = "Form1";
