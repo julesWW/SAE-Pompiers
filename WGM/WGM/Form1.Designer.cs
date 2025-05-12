@@ -31,10 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnQuitter = new System.Windows.Forms.Button();
             this.grbMenu = new System.Windows.Forms.GroupBox();
-            this.btnTableauDeBord = new System.Windows.Forms.Button();
-            this.btnEngins = new System.Windows.Forms.Button();
-            this.btnStatistiques = new System.Windows.Forms.Button();
             this.btnPersonnel = new System.Windows.Forms.Button();
+            this.btnStatistiques = new System.Windows.Forms.Button();
+            this.btnEngins = new System.Windows.Forms.Button();
+            this.btnTableauDeBord = new System.Windows.Forms.Button();
+            this.btnNouvMissionTemp = new System.Windows.Forms.Button();
             this.grbMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@
             // grbMenu
             // 
             this.grbMenu.BackColor = System.Drawing.Color.Brown;
+            this.grbMenu.Controls.Add(this.btnNouvMissionTemp);
             this.grbMenu.Controls.Add(this.btnPersonnel);
             this.grbMenu.Controls.Add(this.btnStatistiques);
             this.grbMenu.Controls.Add(this.btnEngins);
@@ -69,23 +71,14 @@
             this.grbMenu.TabIndex = 1;
             this.grbMenu.TabStop = false;
             // 
-            // btnTableauDeBord
+            // btnPersonnel
             // 
-            this.btnTableauDeBord.Location = new System.Drawing.Point(57, 63);
-            this.btnTableauDeBord.Name = "btnTableauDeBord";
-            this.btnTableauDeBord.Size = new System.Drawing.Size(148, 42);
-            this.btnTableauDeBord.TabIndex = 1;
-            this.btnTableauDeBord.Text = "Tableau de Bord";
-            this.btnTableauDeBord.UseVisualStyleBackColor = true;
-            // 
-            // btnEngins
-            // 
-            this.btnEngins.Location = new System.Drawing.Point(57, 111);
-            this.btnEngins.Name = "btnEngins";
-            this.btnEngins.Size = new System.Drawing.Size(148, 42);
-            this.btnEngins.TabIndex = 2;
-            this.btnEngins.Text = "Gestion des engins";
-            this.btnEngins.UseVisualStyleBackColor = true;
+            this.btnPersonnel.Location = new System.Drawing.Point(57, 159);
+            this.btnPersonnel.Name = "btnPersonnel";
+            this.btnPersonnel.Size = new System.Drawing.Size(148, 42);
+            this.btnPersonnel.TabIndex = 4;
+            this.btnPersonnel.Text = "Gestion du personnel";
+            this.btnPersonnel.UseVisualStyleBackColor = true;
             // 
             // btnStatistiques
             // 
@@ -96,14 +89,33 @@
             this.btnStatistiques.Text = "Statistique";
             this.btnStatistiques.UseVisualStyleBackColor = true;
             // 
-            // btnPersonnel
+            // btnEngins
             // 
-            this.btnPersonnel.Location = new System.Drawing.Point(57, 159);
-            this.btnPersonnel.Name = "btnPersonnel";
-            this.btnPersonnel.Size = new System.Drawing.Size(148, 42);
-            this.btnPersonnel.TabIndex = 4;
-            this.btnPersonnel.Text = "Gestion du personnel";
-            this.btnPersonnel.UseVisualStyleBackColor = true;
+            this.btnEngins.Location = new System.Drawing.Point(57, 111);
+            this.btnEngins.Name = "btnEngins";
+            this.btnEngins.Size = new System.Drawing.Size(148, 42);
+            this.btnEngins.TabIndex = 2;
+            this.btnEngins.Text = "Gestion des engins";
+            this.btnEngins.UseVisualStyleBackColor = true;
+            // 
+            // btnTableauDeBord
+            // 
+            this.btnTableauDeBord.Location = new System.Drawing.Point(57, 63);
+            this.btnTableauDeBord.Name = "btnTableauDeBord";
+            this.btnTableauDeBord.Size = new System.Drawing.Size(148, 42);
+            this.btnTableauDeBord.TabIndex = 1;
+            this.btnTableauDeBord.Text = "Tableau de Bord";
+            this.btnTableauDeBord.UseVisualStyleBackColor = true;
+            // 
+            // btnNouvMissionTemp
+            // 
+            this.btnNouvMissionTemp.Location = new System.Drawing.Point(57, 280);
+            this.btnNouvMissionTemp.Name = "btnNouvMissionTemp";
+            this.btnNouvMissionTemp.Size = new System.Drawing.Size(75, 23);
+            this.btnNouvMissionTemp.TabIndex = 5;
+            this.btnNouvMissionTemp.Text = "mission";
+            this.btnNouvMissionTemp.UseVisualStyleBackColor = true;
+            this.btnNouvMissionTemp.Click += new System.EventHandler(this.btnNouvMissionTemp_Click);
             // 
             // Form1
             // 
@@ -129,6 +141,7 @@
         private System.Windows.Forms.Button btnPersonnel;
         private System.Windows.Forms.Button btnStatistiques;
         private System.Windows.Forms.Button btnEngins;
+        private System.Windows.Forms.Button btnNouvMissionTemp;
     }
 }
 
