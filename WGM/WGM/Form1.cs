@@ -25,5 +25,11 @@ namespace WGM
             MessageBox.Show("C'est ciao");
             Application.Exit();
         }
+
+        private void btnNouvMissionTemp_Click(object sender, EventArgs e)
+        {
+            frmNouvMission frmNouvMission = new frmNouvMission();
+            frmNouvMission.ShowDialog();
+        }
     }
 }
