@@ -1,86 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashboard\\missions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|solutionrelative:dashboard\\missions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|solutionrelative:dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\dashboard\\dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|solutionrelative:dashboard\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashboard\\missions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BBAC9EEA-7CC5-4B07-8F8A-31DA11C2DE4E}|dashBoard\\dashBoard.csproj|solutionrelative:dashboard\\missions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Missions.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\Missions.cs",
-              "RelativeDocumentMoniker": "dashBoard\\Missions.cs",
-              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\Missions.cs [Design]",
-              "RelativeToolTip": "dashBoard\\Missions.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T16:05:53.59Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Missions.cs",
-              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\Missions.cs",
-              "RelativeDocumentMoniker": "dashBoard\\Missions.cs",
-              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\Missions.cs",
-              "RelativeToolTip": "dashBoard\\Missions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T15:48:58.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dashBoard.cs",
-              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\dashBoard.cs",
-              "RelativeDocumentMoniker": "dashBoard\\dashBoard.cs",
-              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\dashBoard.cs",
-              "RelativeToolTip": "dashBoard\\dashBoard.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:58:07.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dashBoard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\dashBoard.cs",
-              "RelativeDocumentMoniker": "dashBoard\\dashBoard.cs",
-              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\dashBoard\\dashBoard\\dashBoard.cs [Design]",
-              "RelativeToolTip": "dashBoard\\dashBoard.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T14:10:28.967Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

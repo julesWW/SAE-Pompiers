@@ -9,19 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pinpon;
+using dashBoard;
 
 namespace WGM
 {
-    public partial class Form1 : Form
+    public partial class frmBase : Form
     {
         SQLiteConnection connec;
-        public Form1()
+        int Page = 0;
+        public frmBase()
         {
             InitializeComponent();
             
         }
 
-            private void btnQuitter_Click(object sender, EventArgs e)
+        private void btnQuitter_Click(object sender, EventArgs e)
         {
             MessageBox.Show("C'est ciao");
             Application.Exit();
@@ -29,8 +31,7 @@ namespace WGM
 
         private void btnNouvMissionTemp_Click(object sender, EventArgs e)
         {
-            frmNouvMission frmNouvMission = new frmNouvMission();
-            frmNouvMission.ShowDialog();
+   
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -50,6 +51,24 @@ namespace WGM
             }
             //  MessageBox.Show(liste);
             Connexion.FermerConnexion();
+
+            changePage();
+        }
+
+        private void changePage()
+        {
+            pnlPage.Controls.Clear();
+            if(Page==0)
+            {
+                uscdashBoard db = new uscdashBoard();
+                pnlPage.Controls.Add(db);
+            }
+        }
+
+        private void btnTableauDeBord_Click(object sender, EventArgs e)
+        {
+            Page = 0;
+            changePage();
         }
     }
 }
