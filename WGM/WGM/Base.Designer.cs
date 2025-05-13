@@ -1,6 +1,6 @@
 ﻿namespace WGM
 {
-    partial class Form1
+    partial class frmBase
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnQuitter = new System.Windows.Forms.Button();
             this.grbMenu = new System.Windows.Forms.GroupBox();
-            this.btnNouvMissionTemp = new System.Windows.Forms.Button();
             this.btnPersonnel = new System.Windows.Forms.Button();
             this.btnStatistiques = new System.Windows.Forms.Button();
             this.btnEngins = new System.Windows.Forms.Button();
             this.btnTableauDeBord = new System.Windows.Forms.Button();
+            this.pnlPage = new System.Windows.Forms.Panel();
             this.grbMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,12 +42,12 @@
             // 
             this.btnQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnQuitter.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnQuitter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuitter.BackgroundImage")));
+            this.btnQuitter.BackgroundImage = global::WGM.Properties.Resources.quit;
             this.btnQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnQuitter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitter.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnQuitter.Location = new System.Drawing.Point(57, 481);
+            this.btnQuitter.Location = new System.Drawing.Point(57, 486);
             this.btnQuitter.Name = "btnQuitter";
             this.btnQuitter.Size = new System.Drawing.Size(147, 85);
             this.btnQuitter.TabIndex = 0;
@@ -59,7 +58,6 @@
             // grbMenu
             // 
             this.grbMenu.BackColor = System.Drawing.Color.Brown;
-            this.grbMenu.Controls.Add(this.btnNouvMissionTemp);
             this.grbMenu.Controls.Add(this.btnPersonnel);
             this.grbMenu.Controls.Add(this.btnStatistiques);
             this.grbMenu.Controls.Add(this.btnEngins);
@@ -67,19 +65,9 @@
             this.grbMenu.Controls.Add(this.btnQuitter);
             this.grbMenu.Location = new System.Drawing.Point(12, 12);
             this.grbMenu.Name = "grbMenu";
-            this.grbMenu.Size = new System.Drawing.Size(268, 597);
+            this.grbMenu.Size = new System.Drawing.Size(268, 602);
             this.grbMenu.TabIndex = 1;
             this.grbMenu.TabStop = false;
-            // 
-            // btnNouvMissionTemp
-            // 
-            this.btnNouvMissionTemp.Location = new System.Drawing.Point(57, 280);
-            this.btnNouvMissionTemp.Name = "btnNouvMissionTemp";
-            this.btnNouvMissionTemp.Size = new System.Drawing.Size(75, 23);
-            this.btnNouvMissionTemp.TabIndex = 5;
-            this.btnNouvMissionTemp.Text = "mission";
-            this.btnNouvMissionTemp.UseVisualStyleBackColor = true;
-            this.btnNouvMissionTemp.Click += new System.EventHandler(this.btnNouvMissionTemp_Click);
             // 
             // btnPersonnel
             // 
@@ -116,18 +104,28 @@
             this.btnTableauDeBord.TabIndex = 1;
             this.btnTableauDeBord.Text = "Tableau de Bord";
             this.btnTableauDeBord.UseVisualStyleBackColor = true;
+            this.btnTableauDeBord.Click += new System.EventHandler(this.btnTableauDeBord_Click);
             // 
-            // Form1
+            // pnlPage
+            // 
+            this.pnlPage.BackColor = System.Drawing.Color.Transparent;
+            this.pnlPage.Location = new System.Drawing.Point(286, 11);
+            this.pnlPage.Name = "pnlPage";
+            this.pnlPage.Size = new System.Drawing.Size(809, 624);
+            this.pnlPage.TabIndex = 2;
+            // 
+            // frmBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::WGM.Properties.Resources.fondAppliPompier;
+            this.BackgroundImage = global::WGM.Properties.Resources.fondAppliPompierV2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1094, 637);
+            this.Controls.Add(this.pnlPage);
             this.Controls.Add(this.grbMenu);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmBase";
+            this.Text = "Combattant du feu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grbMenu.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -142,7 +140,7 @@
         private System.Windows.Forms.Button btnPersonnel;
         private System.Windows.Forms.Button btnStatistiques;
         private System.Windows.Forms.Button btnEngins;
-        private System.Windows.Forms.Button btnNouvMissionTemp;
+        private System.Windows.Forms.Panel pnlPage;
     }
 }
 
