@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnQuitter = new System.Windows.Forms.Button();
             this.grbMenu = new System.Windows.Forms.GroupBox();
+            this.btnNouvMissionTemp = new System.Windows.Forms.Button();
             this.btnPersonnel = new System.Windows.Forms.Button();
             this.btnStatistiques = new System.Windows.Forms.Button();
             this.btnEngins = new System.Windows.Forms.Button();
             this.btnTableauDeBord = new System.Windows.Forms.Button();
-            this.btnNouvMissionTemp = new System.Windows.Forms.Button();
             this.grbMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +70,16 @@
             this.grbMenu.Size = new System.Drawing.Size(268, 597);
             this.grbMenu.TabIndex = 1;
             this.grbMenu.TabStop = false;
+            // 
+            // btnNouvMissionTemp
+            // 
+            this.btnNouvMissionTemp.Location = new System.Drawing.Point(57, 280);
+            this.btnNouvMissionTemp.Name = "btnNouvMissionTemp";
+            this.btnNouvMissionTemp.Size = new System.Drawing.Size(75, 23);
+            this.btnNouvMissionTemp.TabIndex = 5;
+            this.btnNouvMissionTemp.Text = "mission";
+            this.btnNouvMissionTemp.UseVisualStyleBackColor = true;
+            this.btnNouvMissionTemp.Click += new System.EventHandler(this.btnNouvMissionTemp_Click);
             // 
             // btnPersonnel
             // 
@@ -107,16 +117,6 @@
             this.btnTableauDeBord.Text = "Tableau de Bord";
             this.btnTableauDeBord.UseVisualStyleBackColor = true;
             // 
-            // btnNouvMissionTemp
-            // 
-            this.btnNouvMissionTemp.Location = new System.Drawing.Point(57, 280);
-            this.btnNouvMissionTemp.Name = "btnNouvMissionTemp";
-            this.btnNouvMissionTemp.Size = new System.Drawing.Size(75, 23);
-            this.btnNouvMissionTemp.TabIndex = 5;
-            this.btnNouvMissionTemp.Text = "mission";
-            this.btnNouvMissionTemp.UseVisualStyleBackColor = true;
-            this.btnNouvMissionTemp.Click += new System.EventHandler(this.btnNouvMissionTemp_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -128,6 +128,7 @@
             this.Controls.Add(this.grbMenu);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.grbMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
