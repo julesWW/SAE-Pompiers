@@ -31,33 +31,33 @@
             this.lblNoMission = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.grpInfo = new System.Windows.Forms.GroupBox();
-            this.lblMotif = new System.Windows.Forms.Label();
-            this.txtMotif = new System.Windows.Forms.TextBox();
-            this.lblAddr = new System.Windows.Forms.Label();
-            this.lblRue = new System.Windows.Forms.Label();
-            this.lblCodePostal = new System.Windows.Forms.Label();
-            this.lblVille = new System.Windows.Forms.Label();
-            this.txtRue = new System.Windows.Forms.TextBox();
-            this.txtCodePost = new System.Windows.Forms.TextBox();
             this.txtVille = new System.Windows.Forms.TextBox();
+            this.txtCodePost = new System.Windows.Forms.TextBox();
+            this.txtRue = new System.Windows.Forms.TextBox();
+            this.lblVille = new System.Windows.Forms.Label();
+            this.lblCodePostal = new System.Windows.Forms.Label();
+            this.lblRue = new System.Windows.Forms.Label();
+            this.lblAddr = new System.Windows.Forms.Label();
+            this.txtMotif = new System.Windows.Forms.TextBox();
+            this.lblMotif = new System.Windows.Forms.Label();
             this.grpDecision = new System.Windows.Forms.GroupBox();
-            this.lblNature = new System.Windows.Forms.Label();
-            this.lblCaserne = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnConsult = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.cboCaserne = new System.Windows.Forms.ComboBox();
+            this.cboSinistre = new System.Windows.Forms.ComboBox();
+            this.lblCaserne = new System.Windows.Forms.Label();
+            this.lblNature = new System.Windows.Forms.Label();
             this.grpMobilisation = new System.Windows.Forms.GroupBox();
-            this.lblEnginsMobil = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dgvEnginsMobil = new System.Windows.Forms.DataGridView();
             this.dgvPompierMobil = new System.Windows.Forms.DataGridView();
+            this.dgvEnginsMobil = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblEnginsMobil = new System.Windows.Forms.Label();
             this.btnFermer = new System.Windows.Forms.Button();
             this.grpInfo.SuspendLayout();
             this.grpDecision.SuspendLayout();
             this.grpMobilisation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEnginsMobil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPompierMobil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEnginsMobil)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNoMission
@@ -99,53 +99,29 @@
             this.grpInfo.TabStop = false;
             this.grpInfo.Text = "Informations usager";
             // 
-            // lblMotif
+            // txtVille
             // 
-            this.lblMotif.AutoSize = true;
-            this.lblMotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMotif.Location = new System.Drawing.Point(18, 51);
-            this.lblMotif.Name = "lblMotif";
-            this.lblMotif.Size = new System.Drawing.Size(56, 20);
-            this.lblMotif.TabIndex = 0;
-            this.lblMotif.Text = "Motif :";
+            this.txtVille.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVille.Location = new System.Drawing.Point(451, 114);
+            this.txtVille.Name = "txtVille";
+            this.txtVille.Size = new System.Drawing.Size(183, 27);
+            this.txtVille.TabIndex = 8;
             // 
-            // txtMotif
+            // txtCodePost
             // 
-            this.txtMotif.Location = new System.Drawing.Point(78, 51);
-            this.txtMotif.Multiline = true;
-            this.txtMotif.Name = "txtMotif";
-            this.txtMotif.Size = new System.Drawing.Size(232, 94);
-            this.txtMotif.TabIndex = 1;
+            this.txtCodePost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodePost.Location = new System.Drawing.Point(451, 81);
+            this.txtCodePost.Name = "txtCodePost";
+            this.txtCodePost.Size = new System.Drawing.Size(100, 27);
+            this.txtCodePost.TabIndex = 7;
             // 
-            // lblAddr
+            // txtRue
             // 
-            this.lblAddr.AutoSize = true;
-            this.lblAddr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddr.Location = new System.Drawing.Point(465, 26);
-            this.lblAddr.Name = "lblAddr";
-            this.lblAddr.Size = new System.Drawing.Size(133, 20);
-            this.lblAddr.TabIndex = 2;
-            this.lblAddr.Text = "Adresse Sinistre";
-            // 
-            // lblRue
-            // 
-            this.lblRue.AutoSize = true;
-            this.lblRue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRue.Location = new System.Drawing.Point(396, 51);
-            this.lblRue.Name = "lblRue";
-            this.lblRue.Size = new System.Drawing.Size(49, 20);
-            this.lblRue.TabIndex = 3;
-            this.lblRue.Text = "Rue :";
-            // 
-            // lblCodePostal
-            // 
-            this.lblCodePostal.AutoSize = true;
-            this.lblCodePostal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodePostal.Location = new System.Drawing.Point(330, 84);
-            this.lblCodePostal.Name = "lblCodePostal";
-            this.lblCodePostal.Size = new System.Drawing.Size(117, 20);
-            this.lblCodePostal.TabIndex = 4;
-            this.lblCodePostal.Text = "Code postale :";
+            this.txtRue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRue.Location = new System.Drawing.Point(451, 48);
+            this.txtRue.Name = "txtRue";
+            this.txtRue.Size = new System.Drawing.Size(183, 27);
+            this.txtRue.TabIndex = 6;
             // 
             // lblVille
             // 
@@ -157,36 +133,60 @@
             this.lblVille.TabIndex = 5;
             this.lblVille.Text = "Ville :";
             // 
-            // txtRue
+            // lblCodePostal
             // 
-            this.txtRue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRue.Location = new System.Drawing.Point(451, 48);
-            this.txtRue.Name = "txtRue";
-            this.txtRue.Size = new System.Drawing.Size(183, 27);
-            this.txtRue.TabIndex = 6;
+            this.lblCodePostal.AutoSize = true;
+            this.lblCodePostal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodePostal.Location = new System.Drawing.Point(330, 84);
+            this.lblCodePostal.Name = "lblCodePostal";
+            this.lblCodePostal.Size = new System.Drawing.Size(117, 20);
+            this.lblCodePostal.TabIndex = 4;
+            this.lblCodePostal.Text = "Code postale :";
             // 
-            // txtCodePost
+            // lblRue
             // 
-            this.txtCodePost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodePost.Location = new System.Drawing.Point(451, 81);
-            this.txtCodePost.Name = "txtCodePost";
-            this.txtCodePost.Size = new System.Drawing.Size(100, 27);
-            this.txtCodePost.TabIndex = 7;
+            this.lblRue.AutoSize = true;
+            this.lblRue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRue.Location = new System.Drawing.Point(396, 51);
+            this.lblRue.Name = "lblRue";
+            this.lblRue.Size = new System.Drawing.Size(49, 20);
+            this.lblRue.TabIndex = 3;
+            this.lblRue.Text = "Rue :";
             // 
-            // txtVille
+            // lblAddr
             // 
-            this.txtVille.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVille.Location = new System.Drawing.Point(451, 114);
-            this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(183, 27);
-            this.txtVille.TabIndex = 8;
+            this.lblAddr.AutoSize = true;
+            this.lblAddr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddr.Location = new System.Drawing.Point(465, 26);
+            this.lblAddr.Name = "lblAddr";
+            this.lblAddr.Size = new System.Drawing.Size(133, 20);
+            this.lblAddr.TabIndex = 2;
+            this.lblAddr.Text = "Adresse Sinistre";
+            // 
+            // txtMotif
+            // 
+            this.txtMotif.Location = new System.Drawing.Point(78, 51);
+            this.txtMotif.Multiline = true;
+            this.txtMotif.Name = "txtMotif";
+            this.txtMotif.Size = new System.Drawing.Size(232, 94);
+            this.txtMotif.TabIndex = 1;
+            // 
+            // lblMotif
+            // 
+            this.lblMotif.AutoSize = true;
+            this.lblMotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotif.Location = new System.Drawing.Point(18, 51);
+            this.lblMotif.Name = "lblMotif";
+            this.lblMotif.Size = new System.Drawing.Size(56, 20);
+            this.lblMotif.TabIndex = 0;
+            this.lblMotif.Text = "Motif :";
             // 
             // grpDecision
             // 
             this.grpDecision.Controls.Add(this.btnConsult);
             this.grpDecision.Controls.Add(this.btnAnnuler);
-            this.grpDecision.Controls.Add(this.comboBox2);
-            this.grpDecision.Controls.Add(this.comboBox1);
+            this.grpDecision.Controls.Add(this.cboCaserne);
+            this.grpDecision.Controls.Add(this.cboSinistre);
             this.grpDecision.Controls.Add(this.lblCaserne);
             this.grpDecision.Controls.Add(this.lblNature);
             this.grpDecision.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -197,41 +197,15 @@
             this.grpDecision.TabStop = false;
             this.grpDecision.Text = "Décision du régulateur";
             // 
-            // lblNature
+            // btnConsult
             // 
-            this.lblNature.AutoSize = true;
-            this.lblNature.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNature.Location = new System.Drawing.Point(6, 43);
-            this.lblNature.Name = "lblNature";
-            this.lblNature.Size = new System.Drawing.Size(152, 20);
-            this.lblNature.TabIndex = 0;
-            this.lblNature.Text = "Nature du sinistre :";
-            // 
-            // lblCaserne
-            // 
-            this.lblCaserne.AutoSize = true;
-            this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCaserne.Location = new System.Drawing.Point(368, 43);
-            this.lblCaserne.Name = "lblCaserne";
-            this.lblCaserne.Size = new System.Drawing.Size(169, 20);
-            this.lblCaserne.TabIndex = 1;
-            this.lblCaserne.Text = "Caserne a mobiliser :";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(164, 40);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(189, 28);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(543, 40);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(183, 28);
-            this.comboBox2.TabIndex = 3;
+            this.btnConsult.Location = new System.Drawing.Point(513, 82);
+            this.btnConsult.Name = "btnConsult";
+            this.btnConsult.Size = new System.Drawing.Size(157, 29);
+            this.btnConsult.TabIndex = 5;
+            this.btnConsult.Text = "Consulter équipe";
+            this.btnConsult.UseVisualStyleBackColor = true;
+            this.btnConsult.Click += new System.EventHandler(this.btnConsult_Click);
             // 
             // btnAnnuler
             // 
@@ -243,15 +217,41 @@
             this.btnAnnuler.UseVisualStyleBackColor = true;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
-            // btnConsult
+            // cboCaserne
             // 
-            this.btnConsult.Location = new System.Drawing.Point(513, 82);
-            this.btnConsult.Name = "btnConsult";
-            this.btnConsult.Size = new System.Drawing.Size(157, 29);
-            this.btnConsult.TabIndex = 5;
-            this.btnConsult.Text = "Consulter équipe";
-            this.btnConsult.UseVisualStyleBackColor = true;
-            this.btnConsult.Click += new System.EventHandler(this.btnConsult_Click);
+            this.cboCaserne.FormattingEnabled = true;
+            this.cboCaserne.Location = new System.Drawing.Point(543, 40);
+            this.cboCaserne.Name = "cboCaserne";
+            this.cboCaserne.Size = new System.Drawing.Size(183, 28);
+            this.cboCaserne.TabIndex = 3;
+            // 
+            // cboSinistre
+            // 
+            this.cboSinistre.FormattingEnabled = true;
+            this.cboSinistre.Location = new System.Drawing.Point(164, 40);
+            this.cboSinistre.Name = "cboSinistre";
+            this.cboSinistre.Size = new System.Drawing.Size(189, 28);
+            this.cboSinistre.TabIndex = 2;
+            // 
+            // lblCaserne
+            // 
+            this.lblCaserne.AutoSize = true;
+            this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCaserne.Location = new System.Drawing.Point(368, 43);
+            this.lblCaserne.Name = "lblCaserne";
+            this.lblCaserne.Size = new System.Drawing.Size(169, 20);
+            this.lblCaserne.TabIndex = 1;
+            this.lblCaserne.Text = "Caserne a mobiliser :";
+            // 
+            // lblNature
+            // 
+            this.lblNature.AutoSize = true;
+            this.lblNature.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNature.Location = new System.Drawing.Point(6, 43);
+            this.lblNature.Name = "lblNature";
+            this.lblNature.Size = new System.Drawing.Size(152, 20);
+            this.lblNature.TabIndex = 0;
+            this.lblNature.Text = "Nature du sinistre :";
             // 
             // grpMobilisation
             // 
@@ -268,23 +268,15 @@
             this.grpMobilisation.Text = "Mobilisation des engins et des pompiers";
             this.grpMobilisation.Visible = false;
             // 
-            // lblEnginsMobil
+            // dgvPompierMobil
             // 
-            this.lblEnginsMobil.AutoSize = true;
-            this.lblEnginsMobil.Location = new System.Drawing.Point(108, 23);
-            this.lblEnginsMobil.Name = "lblEnginsMobil";
-            this.lblEnginsMobil.Size = new System.Drawing.Size(136, 20);
-            this.lblEnginsMobil.TabIndex = 0;
-            this.lblEnginsMobil.Text = "Engins mobilisés";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(394, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Pompiers mobilisés";
+            this.dgvPompierMobil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPompierMobil.Location = new System.Drawing.Point(372, 46);
+            this.dgvPompierMobil.Name = "dgvPompierMobil";
+            this.dgvPompierMobil.RowHeadersWidth = 51;
+            this.dgvPompierMobil.RowTemplate.Height = 24;
+            this.dgvPompierMobil.Size = new System.Drawing.Size(317, 133);
+            this.dgvPompierMobil.TabIndex = 3;
             // 
             // dgvEnginsMobil
             // 
@@ -296,15 +288,23 @@
             this.dgvEnginsMobil.Size = new System.Drawing.Size(283, 133);
             this.dgvEnginsMobil.TabIndex = 2;
             // 
-            // dgvPompierMobil
+            // label1
             // 
-            this.dgvPompierMobil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPompierMobil.Location = new System.Drawing.Point(372, 46);
-            this.dgvPompierMobil.Name = "dgvPompierMobil";
-            this.dgvPompierMobil.RowHeadersWidth = 51;
-            this.dgvPompierMobil.RowTemplate.Height = 24;
-            this.dgvPompierMobil.Size = new System.Drawing.Size(317, 133);
-            this.dgvPompierMobil.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(394, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Pompiers mobilisés";
+            // 
+            // lblEnginsMobil
+            // 
+            this.lblEnginsMobil.AutoSize = true;
+            this.lblEnginsMobil.Location = new System.Drawing.Point(108, 23);
+            this.lblEnginsMobil.Name = "lblEnginsMobil";
+            this.lblEnginsMobil.Size = new System.Drawing.Size(136, 20);
+            this.lblEnginsMobil.TabIndex = 0;
+            this.lblEnginsMobil.Text = "Engins mobilisés";
             // 
             // btnFermer
             // 
@@ -332,14 +332,15 @@
             this.Controls.Add(this.lblNoMission);
             this.Name = "frmNouvMission";
             this.Text = "Créé une nouvelle mission";
+            this.Load += new System.EventHandler(this.frmNouvMission_Load);
             this.grpInfo.ResumeLayout(false);
             this.grpInfo.PerformLayout();
             this.grpDecision.ResumeLayout(false);
             this.grpDecision.PerformLayout();
             this.grpMobilisation.ResumeLayout(false);
             this.grpMobilisation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEnginsMobil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPompierMobil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEnginsMobil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,8 +363,8 @@
         private System.Windows.Forms.GroupBox grpDecision;
         private System.Windows.Forms.Label lblCaserne;
         private System.Windows.Forms.Label lblNature;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboCaserne;
+        private System.Windows.Forms.ComboBox cboSinistre;
         private System.Windows.Forms.Button btnConsult;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.GroupBox grpMobilisation;
