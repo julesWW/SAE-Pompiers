@@ -24,7 +24,16 @@ namespace WGM
         private void btnConsult_Click(object sender, EventArgs e)
         {
 
-            string paramEngin = "enMission = 0 AND enPanne = 0";
+            int idNatureSinistre = int.Parse(cboCaserne.SelectedValue.ToString());
+
+            List<string> codesTypeEngin = new List<string>();
+
+            foreach(DataRow dr in ds.Tables["Necessiter"].Select("idNatureSinistre = " + idNatureSinistre.ToString()))
+            {
+                codesTypeEngin.Add(dr["codeTypeEngin"].ToString());
+            }
+
+            string paramEngin = "enMission = 0 AND enPanne = 0 AND idCaserne = " + cboCaserne.SelectedValue.ToString() + " AND codeTypeEngin IN " + codesTypeEngin;
             DataTable dtEnginsDispo = ds.Tables["Engin"].Clone();
             foreach (DataRow drE in ds.Tables["Engin"].Select(paramEngin))
             {
@@ -43,12 +52,12 @@ namespace WGM
             grpMobilisation.Visible = true;
         }
 
-        private void btnAnnuler_Click(object sender, EventArgs e)
+        private void btnFermer_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
         }
 
-        private void btnFermer_Click(object sender, EventArgs e)
+        private void btnValider_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
         }
@@ -59,18 +68,24 @@ namespace WGM
 
             // Remplissage de la cbo des sinistre
             cboSinistre.Items.Clear();
-            foreach (DataRow dr in ds.Tables["NatureSinistre"].Rows)
-            {
-                cboSinistre.Items.Add(dr[1]);
-            }
+
+            //Défini la sources des valeurs a remplir
+            cboSinistre.DataSource = ds.Tables["NatureSinistre"]; 
+            //Défini le texte
+            cboSinistre.DisplayMember = ds.Tables["NatureSinistre"].Columns[1].ColumnName; 
+            //Défini la valeurs associer
+            cboSinistre.ValueMember = ds.Tables["NatureSinistre"].Columns[0].ColumnName;
 
 
             // Remplissage de la cbo Caserne
             cboCaserne.Items.Clear();
-            foreach (DataRow dr in ds.Tables["Caserne"].Rows)
-            {
-                cboCaserne.Items.Add(dr[1]);
-            }
+
+            cboCaserne.DataSource = ds.Tables["Caserne"];
+            cboCaserne.DisplayMember = ds.Tables["Caserne"].Columns[1].ColumnName;
+            cboCaserne.ValueMember = ds.Tables["Caserne"].Columns[0].ColumnName;
+            
         }
+
+        
     }
 }
