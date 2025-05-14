@@ -9,6 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using Pinpon;
 
 namespace Mission
@@ -54,33 +55,15 @@ namespace Mission
                     r["terminee"] = 1;
                 }
             }
+
+
             connec = Connexion.Connec;
-            try
-            { 
-                string requete = "update Mission set dateHeureRetour = \"" + dateHeureFin +"\" , compteRendu = \"" + rtbCR.Text+"\", terminee = 1 where id = "+id;
-                SQLiteCommand cd = new SQLiteCommand();
-                cd.Connection = connec;
-                cd.CommandType = CommandType.Text;
-                cd.CommandText = requete;
-                cd.ExecuteNonQuery();
-                DialogResult = DialogResult.OK;
-            }
-            catch (SQLiteException)
-            {
-                MessageBox.Show("erreur de la requête SQL");
-                DialogResult = DialogResult.Cancel;
-            }
-            catch (InvalidOperationException)
-            {
-                MessageBox.Show("erreur de la connection");
-                DialogResult = DialogResult.Cancel;
-                }
-            catch (Exception erreur)
-            {
-                MessageBox.Show(erreur.GetType().ToString());
-                DialogResult = DialogResult.Cancel;
-            }
-            finally { }
+            string req = "select * from Mission";
+            SQLiteCommand cmd = new SQLiteCommand(req, connec);
+            SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+            SQLiteCommandBuilder builder = new SQLiteCommandBuilder(da);
+            da.Update(MesDatas.DsGlobal, "Mission");
+            DialogResult = DialogResult.OK;
             Connexion.FermerConnexion();
         }
     }
