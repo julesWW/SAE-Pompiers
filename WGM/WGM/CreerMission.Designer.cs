@@ -42,7 +42,6 @@
             this.lblMotif = new System.Windows.Forms.Label();
             this.grpDecision = new System.Windows.Forms.GroupBox();
             this.btnConsult = new System.Windows.Forms.Button();
-            this.btnAnnuler = new System.Windows.Forms.Button();
             this.cboCaserne = new System.Windows.Forms.ComboBox();
             this.cboSinistre = new System.Windows.Forms.ComboBox();
             this.lblCaserne = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblEnginsMobil = new System.Windows.Forms.Label();
             this.btnFermer = new System.Windows.Forms.Button();
+            this.btnValider = new System.Windows.Forms.Button();
             this.grpInfo.SuspendLayout();
             this.grpDecision.SuspendLayout();
             this.grpMobilisation.SuspendLayout();
@@ -184,7 +184,6 @@
             // grpDecision
             // 
             this.grpDecision.Controls.Add(this.btnConsult);
-            this.grpDecision.Controls.Add(this.btnAnnuler);
             this.grpDecision.Controls.Add(this.cboCaserne);
             this.grpDecision.Controls.Add(this.cboSinistre);
             this.grpDecision.Controls.Add(this.lblCaserne);
@@ -199,23 +198,13 @@
             // 
             // btnConsult
             // 
-            this.btnConsult.Location = new System.Drawing.Point(513, 82);
+            this.btnConsult.Location = new System.Drawing.Point(361, 82);
             this.btnConsult.Name = "btnConsult";
             this.btnConsult.Size = new System.Drawing.Size(157, 29);
             this.btnConsult.TabIndex = 5;
-            this.btnConsult.Text = "Consulter équipe";
+            this.btnConsult.Text = "Créer équipe";
             this.btnConsult.UseVisualStyleBackColor = true;
             this.btnConsult.Click += new System.EventHandler(this.btnConsult_Click);
-            // 
-            // btnAnnuler
-            // 
-            this.btnAnnuler.Location = new System.Drawing.Point(400, 82);
-            this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(88, 29);
-            this.btnAnnuler.TabIndex = 4;
-            this.btnAnnuler.Text = "Annuler";
-            this.btnAnnuler.UseVisualStyleBackColor = true;
-            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // cboCaserne
             // 
@@ -310,7 +299,7 @@
             // 
             this.btnFermer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFermer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFermer.Location = new System.Drawing.Point(674, 563);
+            this.btnFermer.Location = new System.Drawing.Point(602, 563);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(103, 35);
             this.btnFermer.TabIndex = 5;
@@ -318,12 +307,25 @@
             this.btnFermer.UseVisualStyleBackColor = true;
             this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
+            // btnValider
+            // 
+            this.btnValider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValider.Location = new System.Drawing.Point(710, 563);
+            this.btnValider.Name = "btnValider";
+            this.btnValider.Size = new System.Drawing.Size(103, 35);
+            this.btnValider.TabIndex = 6;
+            this.btnValider.Text = "Valider";
+            this.btnValider.UseVisualStyleBackColor = true;
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
+            // 
             // frmNouvMission
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Firebrick;
+            this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(825, 602);
+            this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.grpMobilisation);
             this.Controls.Add(this.grpDecision);
@@ -366,12 +368,12 @@
         private System.Windows.Forms.ComboBox cboCaserne;
         private System.Windows.Forms.ComboBox cboSinistre;
         private System.Windows.Forms.Button btnConsult;
-        private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.GroupBox grpMobilisation;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblEnginsMobil;
         private System.Windows.Forms.DataGridView dgvPompierMobil;
         private System.Windows.Forms.DataGridView dgvEnginsMobil;
         private System.Windows.Forms.Button btnFermer;
+        private System.Windows.Forms.Button btnValider;
     }
 }

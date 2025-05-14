@@ -23,7 +23,6 @@ C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\bin\Debug\WG
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\bin\Debug\System.Data.SQLite.dll
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\bin\Debug\System.Data.SQLite.xml
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.AssemblyReference.cache
-C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.Form1.resources
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.frmNouvMission.resources
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.Properties.Resources.resources
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.GenerateResource.cache
@@ -37,3 +36,5 @@ C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WG
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.Up2Date
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.frmBase.resources
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\dashBoard.uscdashBoard.resources
+C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.frmBase.resources
+C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\dashBoard.uscdashBoard.resources

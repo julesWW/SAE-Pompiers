@@ -40,7 +40,9 @@
             // 
             // btnQuitter
             // 
-            this.btnQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnQuitter.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnQuitter.BackgroundImage = global::WGM.Properties.Resources.quit;
             this.btnQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -71,6 +73,9 @@
             // 
             // btnPersonnel
             // 
+            this.btnPersonnel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPersonnel.Location = new System.Drawing.Point(57, 159);
             this.btnPersonnel.Name = "btnPersonnel";
             this.btnPersonnel.Size = new System.Drawing.Size(148, 42);
@@ -80,6 +85,9 @@
             // 
             // btnStatistiques
             // 
+            this.btnStatistiques.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStatistiques.Location = new System.Drawing.Point(57, 207);
             this.btnStatistiques.Name = "btnStatistiques";
             this.btnStatistiques.Size = new System.Drawing.Size(148, 42);
@@ -89,6 +97,9 @@
             // 
             // btnEngins
             // 
+            this.btnEngins.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEngins.Location = new System.Drawing.Point(57, 111);
             this.btnEngins.Name = "btnEngins";
             this.btnEngins.Size = new System.Drawing.Size(148, 42);
@@ -98,6 +109,9 @@
             // 
             // btnTableauDeBord
             // 
+            this.btnTableauDeBord.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTableauDeBord.Location = new System.Drawing.Point(57, 63);
             this.btnTableauDeBord.Name = "btnTableauDeBord";
             this.btnTableauDeBord.Size = new System.Drawing.Size(148, 42);
@@ -109,9 +123,9 @@
             // pnlPage
             // 
             this.pnlPage.BackColor = System.Drawing.Color.Transparent;
-            this.pnlPage.Location = new System.Drawing.Point(286, 11);
+            this.pnlPage.Location = new System.Drawing.Point(259, 11);
             this.pnlPage.Name = "pnlPage";
-            this.pnlPage.Size = new System.Drawing.Size(809, 624);
+            this.pnlPage.Size = new System.Drawing.Size(836, 624);
             this.pnlPage.TabIndex = 2;
             // 
             // frmBase
