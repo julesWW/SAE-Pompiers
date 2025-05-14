@@ -52,26 +52,47 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connexion.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Base.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Base.Designer.cs">
+      <DependentUpon>Base.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="CreerMission.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="CreerMission.Designer.cs">
+      <DependentUpon>CreerMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cloture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cloture.Designer.cs">
+      <DependentUpon>Cloture.cs</DependentUpon>
     </Compile>
     <Compile Include="mesDatas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Missions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Missions.Designer.cs">
+      <DependentUpon>Missions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dashBoard.Designer.cs">
+      <DependentUpon>dashBoard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base.resx">
+      <DependentUpon>Base.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="CreerMission.resx">
+      <DependentUpon>CreerMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashBoard.resx">
+      <DependentUpon>dashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +120,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondAppliPompier.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlertOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downloadPDF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireManThumbsUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireManThumbsUpOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondAppliPompierV2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
