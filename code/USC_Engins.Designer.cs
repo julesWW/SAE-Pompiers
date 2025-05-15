@@ -1,18 +1,18 @@
-ï»¿using System;
+using System;
 
 namespace Engins
 {
     partial class USC_Engins
     {
         /// <summary>
-        /// Variable nÃ©cessaire au concepteur.
+        /// Variable nécessaire au concepteur.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Nettoyage des ressources utilisÃ©es.
+        /// Nettoyage des ressources utilisées.
         /// </summary>
-        /// <param name="disposing">true si les ressources managÃ©es doivent Ãªtre supprimÃ©esÂ ; sinon, false.</param>
+        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,11 +22,11 @@ namespace Engins
             base.Dispose(disposing);
         }
 
-        #region Code gÃ©nÃ©rÃ© par le Concepteur de composants
+        #region Code généré par le Concepteur de composants
 
         /// <summary>
-        /// MÃ©thode requise pour la prise en charge du concepteur - ne modifiez pas 
-        /// le contenu de cette mÃ©thode avec l'Ã©diteur de code.
+        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas 
+        /// le contenu de cette méthode avec l'éditeur de code.
         /// </summary>
         private void InitializeComponent()
         {
@@ -173,7 +173,7 @@ namespace Engins
             this.lblDateRecept.Name = "lblDateRecept";
             this.lblDateRecept.Size = new System.Drawing.Size(165, 25);
             this.lblDateRecept.TabIndex = 2;
-            this.lblDateRecept.Text = "Date de rÃ©ception";
+            this.lblDateRecept.Text = "Date de réception";
             // 
             // lblNumVal
             // 
@@ -193,7 +193,7 @@ namespace Engins
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(81, 25);
             this.lblNum.TabIndex = 0;
-            this.lblNum.Text = "NumÃ©ro";
+            this.lblNum.Text = "Numéro";
             // 
             // btnPreviousPlus
             // 
