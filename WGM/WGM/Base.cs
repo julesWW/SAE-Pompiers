@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pinpon;
 using dashBoard;
+using Engins;
 
 namespace WGM
 {
@@ -20,7 +21,7 @@ namespace WGM
         public frmBase()
         {
             InitializeComponent();
-            
+         
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -52,6 +53,11 @@ namespace WGM
             //  MessageBox.Show(liste);
             Connexion.FermerConnexion();
 
+            ForeignKeyConstraint FK_Caserne = new ForeignKeyConstraint("FK_Caserne", MesDatas.DsGlobal.Tables["Caserne"].Columns["id"], MesDatas.DsGlobal.Tables["Engin"].Columns["idCaserne"]);
+            MesDatas.DsGlobal.Tables["Engin"].Constraints.Add(FK_Caserne);
+
+            MesDatas.DsGlobal.Relations.Add("relEnginCaserne", MesDatas.DsGlobal.Tables["Caserne"].Columns["id"], MesDatas.DsGlobal.Tables["Engin"].Columns["idCaserne"]);
+
             changePage();
         }
 
@@ -63,11 +69,22 @@ namespace WGM
                 uscdashBoard db = new uscdashBoard();
                 pnlPage.Controls.Add(db);
             }
+            if (Page == 1)
+            {
+                USC_Engins en = new USC_Engins ();
+                pnlPage.Controls.Add(en);
+            }
         }
 
         private void btnTableauDeBord_Click(object sender, EventArgs e)
         {
             Page = 0;
+            changePage();
+        }
+
+        private void btnEngins_Click(object sender, EventArgs e)
+        {
+            Page = 1;
             changePage();
         }
     }
