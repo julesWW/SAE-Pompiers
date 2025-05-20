@@ -23,33 +23,92 @@ namespace WGM
         //-----------------------------------------------------------------
         private void btnConsult_Click(object sender, EventArgs e)
         {
+            int idNatureSinistre = int.Parse(cboSinistre.SelectedValue.ToString());
 
-            int idNatureSinistre = int.Parse(cboCaserne.SelectedValue.ToString());
+            DataSet dsTemp = new DataSet();
+            dsTemp.Tables.Clear();
+            dsTemp.Tables.Add("besoinVehicule");
+            dsTemp.Tables["besoinVehicule"].Columns.Add("codeTypeEngin");
+            dsTemp.Tables["besoinVehicule"].Columns.Add("nombre");
 
-            List<string> codesTypeEngin = new List<string>();
+            //string codesTypeEngin = "";
 
             foreach(DataRow dr in ds.Tables["Necessiter"].Select("idNatureSinistre = " + idNatureSinistre.ToString()))
             {
-                codesTypeEngin.Add(dr["codeTypeEngin"].ToString());
+                DataRow newRow = dsTemp.Tables["besoinVehicule"].NewRow();
+                newRow["codeTypeEngin"] = dr["codeTypeEngin"];
+                newRow["nombre"] = dr["nombre"];
+                dsTemp.Tables["besoinVehicule"].Rows.Add(newRow);
             }
 
-            string paramEngin = "enMission = 0 AND enPanne = 0 AND idCaserne = " + cboCaserne.SelectedValue.ToString() + " AND codeTypeEngin IN " + codesTypeEngin;
-            DataTable dtEnginsDispo = ds.Tables["Engin"].Clone();
+            //if(codesTypeEngin.EndsWith(",")) codesTypeEngin = codesTypeEngin.Substring(0,codesTypeEngin.Length - 1);
+
+            dsTemp.Tables.Add("vehiculePossible");
+            dsTemp.Tables["vehiculePossible"].Columns.Add("typeEngin");
+            dsTemp.Tables["vehiculePossible"].Columns.Add("numero");
+
+            string codeOccu = "";
+            int nbOcc = 0;
+
+            foreach (DataRow dr2 in dsTemp.Tables["besoinVehicule"].Rows)
+            {
+                string paramEngin = "enMission = 0 AND enPanne = 0 AND idCaserne = " + cboCaserne.SelectedValue.ToString() + " AND codeTypeEngin = '" + dr2[0] + "'";
+                DataRow[] engins = ds.Tables["Engin"].Select(paramEngin);
+
+                foreach (DataRow engin in engins)
+                {
+                    if(codeOccu != engin["codeTypeEngin"].ToString())
+                    {
+                        codeOccu = engin["codeTypeEngin"].ToString();
+                        nbOcc = Convert.ToInt32(dr2["nombre"]) - 1;
+                        //Ajout du vehicule
+                        DataRow nRow = dsTemp.Tables["vehiculePossible"].NewRow();
+                        nRow["typeEngin"] = engin["codeTypeEngin"];
+                        nRow["numero"] = engin["numero"];
+                        dsTemp.Tables["vehiculePossible"].Rows.Add(nRow);
+                    }
+                    else if(codeOccu == engin["codeTypeEngin"].ToString() && nbOcc > 0)
+                    {
+                        DataRow nRow = dsTemp.Tables["vehiculePossible"].NewRow();
+                        nRow["typeEngin"] = engin["codeTypeEngin"];
+                        nRow["numero"] = engin["numero"];
+                        dsTemp.Tables["vehiculePossible"].Rows.Add(nRow);
+                        nbOcc -= 1;
+                    }
+
+                }
+            }
+
+
+
+            /*
+            //Creation d'une datatable pour les engins
+            DataTable dtEnginsDispo = new DataTable();
+            dtEnginsDispo.Columns.Add("codeTypeEngin", typeof(string));
+            dtEnginsDispo.Columns.Add("numero", typeof(string));
+            dsTemp.Tables.Add(dtEnginsDispo);
+       
+            //Remplissage de la table personnalisée
             foreach (DataRow drE in ds.Tables["Engin"].Select(paramEngin))
             {
-                dtEnginsDispo.ImportRow(drE);
+                DataRow nR = dtEnginsDispo.NewRow();
+                nR["codeTypeEngin"] = drE["codeTypeEngin"];
+                nR["numero"] = drE["numero"];
+                dtEnginsDispo.Rows.Add(nR);
             }
+            */
 
-
-            // Création du BindingSource
+            //Création du BindingSource
             BindingSource bs = new BindingSource();
-            bs.DataSource = dtEnginsDispo;
+            bs.DataSource = dsTemp.Tables["vehiculePossible"];
 
-            // Liaison à la DataGridView
+            //Liaison à la DataGridView
             dgvEnginsMobil.DataSource = bs;
 
-            // Affichage du groupe
+            //Affichage du groupe
             grpMobilisation.Visible = true;
+
+            btnValider.Enabled = true;
         }
 
         private void btnFermer_Click(object sender, EventArgs e)
@@ -66,7 +125,7 @@ namespace WGM
         {
             lblDate.Text += dateSinistre;
 
-            // Remplissage de la cbo des sinistre
+            //Remplissage de la cbo des sinistre
             cboSinistre.Items.Clear();
 
             //Défini la sources des valeurs a remplir
@@ -86,6 +145,9 @@ namespace WGM
             
         }
 
-        
+        private void cboSinistre_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnValider.Enabled = false;
+        }
     }
 }
