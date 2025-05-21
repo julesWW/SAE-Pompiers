@@ -25,13 +25,13 @@ namespace WGM
         {
             int idNatureSinistre = int.Parse(cboSinistre.SelectedValue.ToString());
 
+
+            //affecter des vehicules
             DataSet dsTemp = new DataSet();
             dsTemp.Tables.Clear();
             dsTemp.Tables.Add("besoinVehicule");
             dsTemp.Tables["besoinVehicule"].Columns.Add("codeTypeEngin");
             dsTemp.Tables["besoinVehicule"].Columns.Add("nombre");
-
-            //string codesTypeEngin = "";
 
             foreach(DataRow dr in ds.Tables["Necessiter"].Select("idNatureSinistre = " + idNatureSinistre.ToString()))
             {
@@ -40,8 +40,6 @@ namespace WGM
                 newRow["nombre"] = dr["nombre"];
                 dsTemp.Tables["besoinVehicule"].Rows.Add(newRow);
             }
-
-            //if(codesTypeEngin.EndsWith(",")) codesTypeEngin = codesTypeEngin.Substring(0,codesTypeEngin.Length - 1);
 
             dsTemp.Tables.Add("vehiculePossible");
             dsTemp.Tables["vehiculePossible"].Columns.Add("typeEngin");
@@ -76,6 +74,28 @@ namespace WGM
                         nbOcc -= 1;
                     }
 
+                }
+            }
+
+            //affecter des pompiers
+            dsTemp.Tables.Add("pompier");
+            dsTemp.Tables["pompier"].Columns.Add("Matricule");
+            dsTemp.Tables["pompier"].Columns.Add("Habilitation");
+
+            
+            foreach (DataRow vehicule in dsTemp.Tables["vehiculePossible"].Rows)
+            {
+                foreach(DataRow habil in ds.Tables["Embarquer"].Select("codeTypeEngins = " + vehicule["codeTypeEngin"]))
+                {
+                    
+                    string parametrePompier = "enMission = 0 AND enConge = 0";
+                    foreach(DataRow equipeVehicule in ds.Tables["Pompier"].Select(parametrePompier))
+                    {
+                        if (true)
+                        {
+
+                        }
+                    }
                 }
             }
 
@@ -143,6 +163,8 @@ namespace WGM
             cboCaserne.DisplayMember = ds.Tables["Caserne"].Columns[1].ColumnName;
             cboCaserne.ValueMember = ds.Tables["Caserne"].Columns[0].ColumnName;
             
+            int numeroMission = ds.Tables["Mission"].Rows.Count +1;
+            lblNoMission.Text += numeroMission.ToString();
         }
 
         private void cboSinistre_SelectedIndexChanged(object sender, EventArgs e)
