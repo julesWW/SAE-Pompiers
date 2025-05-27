@@ -44,53 +44,33 @@ namespace Personnel
             {
                 grpPlus.Visible = true;
                 btnPlus.Visible = false;
+                btnEdit.Visible = true;
+                btnAnnule.Visible = true;
             }
         }
 
         private void btnMoins_Click(object sender, EventArgs e)
         {
-            grpPlus.Visible = false;
-            btnPlus.Visible=true;
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            frmIdentification ID = new frmIdentification();
-            if (ID.ShowDialog() == DialogResult.OK)
-            {
-                btnEdit.Visible = false;
-                btnValide.Visible = true;
-                btnAnnule.Visible = true;
                 cboGrade.Visible = true;
                 txtTelephone.Visible = true;
                 txtBip.Visible = true;
-            }
         }
 
-        private void btnValide_Click(object sender, EventArgs e)
-        {
-            txtGrade.Text = cboGrade.SelectedValue.ToString();
-            lblTelephone.Text = "Téléphone : " + txtTelephone.Text;
-            lblBip.Text = "Bip : " + txtBip.Text;
-            //changer dans MesDatas ... maybe ?
 
-
-            btnEdit.Visible = true;
-            btnValide.Visible = false;
-            btnAnnule.Visible = false;
-            cboGrade.Visible = false;
-            txtTelephone.Visible = false;
-            txtBip.Visible = false;
-        }
 
         private void btnAnnule_Click(object sender, EventArgs e)
         {
-            btnEdit.Visible = true;
-            btnValide.Visible = false;
-            btnAnnule.Visible = false;
+            grpPlus.Visible = false;
+            btnPlus.Visible = true;
             cboGrade.Visible = false;
             txtTelephone.Visible = false;
             txtBip.Visible = false;
+            cboPompier_SelectedIndexChanged(sender, e);
         }
 
         private void uscPersonnel_Load(object sender, EventArgs e)
@@ -211,6 +191,43 @@ namespace Personnel
                     //Plus
                     cboCaserneModif.SelectedValue=cboCaserne.SelectedValue;
                     chkConge.Checked = dr["enConge"].ToString() == "1";
+                    lstAffectationPassees.Items.Clear();
+                    foreach (DataRow dr2 in MesDatas.DsGlobal.Tables["Affectation"].Rows)
+                    {
+                        if (dr2["matriculePompier"].ToString() == cboPompier.SelectedValue.ToString())
+                        {
+                            if (dr2["dateFin"] != DBNull.Value)
+                            {
+                                string dateA= dr2["dateA"].ToString();
+                                string caserne = "";
+                                foreach(DataRow dr3 in MesDatas.DsGlobal.Tables["Caserne"].Rows)
+                                {
+                                    if (dr3["id"].ToString() == dr2["idCaserne"].ToString())
+                                    {
+                                        caserne = dr3["nom"].ToString();
+                                    }
+                                }
+                                lstAffectationPassees.Items.Add(dateA+" - "+caserne);
+                            }
+                        }
+                    }
+                    lstHabilitation.Items.Clear();
+                    foreach (DataRow dr2 in MesDatas.DsGlobal.Tables["Passer"].Rows)
+                    {
+                        if (dr2["matriculePompier"].ToString() == cboPompier.SelectedValue.ToString())
+                        {
+                            string dateH = dr2["dateObtention"].ToString();
+                            string habilitation = "";
+                            foreach (DataRow dr3 in MesDatas.DsGlobal.Tables["Habilitation"].Rows)
+                            {
+                                if (dr3["id"].ToString() == dr2["idHabilitation"].ToString())
+                                {
+                                    habilitation = dr3["libelle"].ToString();
+                                }
+                            }
+                            lstHabilitation.Items.Add(dateH + " - " + habilitation);
+                        }
+                    }
                 }
             }
         }
@@ -218,6 +235,114 @@ namespace Personnel
         private void txtGrade_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void btnMaj_Click(object sender, EventArgs e)
+        {
+            txtGrade.Text = cboGrade.SelectedValue.ToString();
+            lblTelephone.Text = "Téléphone : " + txtTelephone.Text;
+            lblBip.Text = "Bip : " + txtBip.Text;
+            int Conge = 0;
+            if (chkConge.Checked)
+            {
+                Conge = 1;
+            }
+            foreach (DataRow dr in MesDatas.DsGlobal.Tables["Pompier"].Rows)
+            {
+                if (dr["matricule"].ToString() == cboPompier.SelectedValue.ToString())
+                {
+                    dr["codeGrade"]=txtGrade.Text;
+                    dr["portable"] = txtTelephone.Text;
+                    dr["bip"] = txtBip.Text;
+                    dr["enConge"]= Conge;
+                }
+            }
+            string[] dateheure = DateTime.Now.ToString().Split(' ');
+            string[] datefin = dateheure[0].ToString().Split('/');
+
+            if (cboCaserne.SelectedValue.ToString() != cboCaserneModif.SelectedValue.ToString())
+            {
+                foreach (DataRow dr in MesDatas.DsGlobal.Tables["Affectation"].Rows)
+                {
+                    if (dr["matriculePompier"].ToString() == cboPompier.SelectedValue.ToString())
+                    {
+                        if (dr["dateFin"]==DBNull.Value)
+                        {
+                            dr["dateFin"]= datefin[2] + "-" + datefin[1] + "-" + datefin[0];
+
+                        }
+                    }
+                }
+                DataRow newRow= MesDatas.DsGlobal.Tables["Affectation"].NewRow();
+                newRow[0] = cboPompier.SelectedValue.ToString();
+                newRow[1] = datefin[2] + "-" + datefin[1] + "-" + datefin[0];
+                newRow[3] = cboCaserneModif.SelectedValue.ToString();
+
+                MesDatas.DsGlobal.Tables["Affectation"].Rows.Add(newRow);
+
+            }
+            //changer dans MesDatas ... maybe ?
+
+            var rm = Properties.Resources.ResourceManager;
+            pboGrade.BackgroundImage = rm.GetObject(cboGrade.SelectedValue.ToString()) as Image;
+            connec = Connexion.Connec;
+            SQLiteTransaction transac = connec.BeginTransaction();
+            SQLiteCommand cmd = new SQLiteCommand();
+            cmd.Connection = connec;
+            cmd.Transaction = transac;
+            try
+            {
+                cmd.CommandText = @"update Pompier set codeGrade = '"+ txtGrade.Text + @"'
+                                    where matricule = '"+ cboPompier.SelectedValue.ToString() + @"'";
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("1");
+                cmd.CommandText = @"update Pompier set portable = '" + txtTelephone.Text + @"'
+                                    where matricule = '" + cboPompier.SelectedValue.ToString() + @"'";
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("2");
+                cmd.CommandText = @"update Pompier set bip = '" + txtBip.Text + @"'
+                                    where matricule = '" + cboPompier.SelectedValue.ToString() + @"'";
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("3");
+                cmd.CommandText = @"update Pompier set enConge = '" + Conge + @"'
+                                    where matricule = '" + cboPompier.SelectedValue.ToString() + @"'";
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("4");
+
+
+                if (cboCaserne.SelectedValue.ToString() != cboCaserneModif.SelectedValue.ToString())
+                {
+                    cmd.CommandText = @"update Affectation set dateFin = '" + datefin[2] + "-" + datefin[1] + "-" + datefin[0] + @"'
+                                    where matriculePompier = '" + cboPompier.SelectedValue.ToString() + @"'
+                                    AND dateFin is null";
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("5");
+                    cmd.CommandText = @"INSERT INTO Affectation (matriculePompier, dateA, idCaserne)
+                                    VALUES ('" + cboPompier.SelectedValue.ToString() + @"','" + datefin[2] + "-" + datefin[1] + "-" + datefin[0] + @"','" + cboCaserneModif.SelectedValue.ToString() + @"')";
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("6");
+                }
+                MessageBox.Show("7?");
+                transac.Commit();
+                MessageBox.Show("effectué");
+            }
+            catch
+            {
+                // annulation de la transaction
+                transac.Rollback();
+                MessageBox.Show("Transaction annulée !");
+            }
+        }
+
+        private void txtBip_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!((char)e.KeyChar >= '0' && (char)e.KeyChar <= '9'))
+            {
+                if ( e.KeyChar != (char)Keys.Back)
+                {
+                e.Handled = true;
+                }
+            }
         }
     }
 }
