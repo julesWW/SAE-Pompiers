@@ -36,8 +36,6 @@
             this.grpGeneral = new System.Windows.Forms.GroupBox();
             this.pboGrade = new System.Windows.Forms.PictureBox();
             this.grpCarriere = new System.Windows.Forms.GroupBox();
-            this.btnValide = new System.Windows.Forms.Button();
-            this.btnAnnule = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.txtBip = new System.Windows.Forms.TextBox();
             this.txtTelephone = new System.Windows.Forms.TextBox();
@@ -54,17 +52,17 @@
             this.lblPrenom = new System.Windows.Forms.Label();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblMatricule = new System.Windows.Forms.Label();
+            this.btnAnnule = new System.Windows.Forms.Button();
             this.grpPlus = new System.Windows.Forms.GroupBox();
+            this.lstAffectationPassees = new System.Windows.Forms.ListBox();
+            this.lstHabilitation = new System.Windows.Forms.ListBox();
             this.btnMaj = new System.Windows.Forms.Button();
             this.chkConge = new System.Windows.Forms.CheckBox();
-            this.btnMoins = new System.Windows.Forms.Button();
             this.lblAffectation = new System.Windows.Forms.Label();
             this.lblHabilitation = new System.Windows.Forms.Label();
             this.lblCaserneModif = new System.Windows.Forms.Label();
             this.cboCaserneModif = new System.Windows.Forms.ComboBox();
             this.btnPlus = new System.Windows.Forms.Button();
-            this.lstHabilitation = new System.Windows.Forms.ListBox();
-            this.lstAffectationPassees = new System.Windows.Forms.ListBox();
             this.grpGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).BeginInit();
             this.grpCarriere.SuspendLayout();
@@ -151,8 +149,6 @@
             // grpCarriere
             // 
             this.grpCarriere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
-            this.grpCarriere.Controls.Add(this.btnValide);
-            this.grpCarriere.Controls.Add(this.btnAnnule);
             this.grpCarriere.Controls.Add(this.btnEdit);
             this.grpCarriere.Controls.Add(this.txtBip);
             this.grpCarriere.Controls.Add(this.txtTelephone);
@@ -168,36 +164,9 @@
             this.grpCarriere.TabStop = false;
             this.grpCarriere.Text = "Carrière";
             // 
-            // btnValide
-            // 
-            this.btnValide.BackColor = System.Drawing.Color.Honeydew;
-            this.btnValide.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValide.ForeColor = System.Drawing.Color.Green;
-            this.btnValide.Location = new System.Drawing.Point(444, 19);
-            this.btnValide.Name = "btnValide";
-            this.btnValide.Size = new System.Drawing.Size(116, 31);
-            this.btnValide.TabIndex = 17;
-            this.btnValide.Text = "Valider";
-            this.btnValide.UseVisualStyleBackColor = false;
-            this.btnValide.Visible = false;
-            this.btnValide.Click += new System.EventHandler(this.btnValide_Click);
-            // 
-            // btnAnnule
-            // 
-            this.btnAnnule.BackColor = System.Drawing.Color.MistyRose;
-            this.btnAnnule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnnule.ForeColor = System.Drawing.Color.Maroon;
-            this.btnAnnule.Location = new System.Drawing.Point(561, 19);
-            this.btnAnnule.Name = "btnAnnule";
-            this.btnAnnule.Size = new System.Drawing.Size(116, 31);
-            this.btnAnnule.TabIndex = 16;
-            this.btnAnnule.Text = "Annuler";
-            this.btnAnnule.UseVisualStyleBackColor = false;
-            this.btnAnnule.Visible = false;
-            this.btnAnnule.Click += new System.EventHandler(this.btnAnnule_Click);
-            // 
             // btnEdit
             // 
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Maroon;
             this.btnEdit.Location = new System.Drawing.Point(561, 17);
@@ -206,16 +175,19 @@
             this.btnEdit.TabIndex = 15;
             this.btnEdit.Text = "Changer";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Visible = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // txtBip
             // 
             this.txtBip.Location = new System.Drawing.Point(592, 67);
             this.txtBip.Name = "txtBip";
+            this.txtBip.ShortcutsEnabled = false;
             this.txtBip.Size = new System.Drawing.Size(85, 22);
             this.txtBip.TabIndex = 14;
             this.txtBip.Text = "AAAAA";
             this.txtBip.Visible = false;
+            this.txtBip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBip_KeyPress);
             // 
             // txtTelephone
             // 
@@ -230,6 +202,8 @@
             // 
             this.txtGrade.Location = new System.Drawing.Point(94, 28);
             this.txtGrade.Name = "txtGrade";
+            this.txtGrade.ReadOnly = true;
+            this.txtGrade.ShortcutsEnabled = false;
             this.txtGrade.Size = new System.Drawing.Size(100, 22);
             this.txtGrade.TabIndex = 12;
             this.txtGrade.Text = "AAAAAA";
@@ -360,14 +334,29 @@
             this.lblMatricule.TabIndex = 0;
             this.lblMatricule.Text = "Matricule AAAAAA";
             // 
+            // btnAnnule
+            // 
+            this.btnAnnule.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAnnule.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnnule.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnule.ForeColor = System.Drawing.Color.Maroon;
+            this.btnAnnule.Location = new System.Drawing.Point(445, 172);
+            this.btnAnnule.Name = "btnAnnule";
+            this.btnAnnule.Size = new System.Drawing.Size(116, 31);
+            this.btnAnnule.TabIndex = 16;
+            this.btnAnnule.Text = "Annuler";
+            this.btnAnnule.UseVisualStyleBackColor = false;
+            this.btnAnnule.Visible = false;
+            this.btnAnnule.Click += new System.EventHandler(this.btnAnnule_Click);
+            // 
             // grpPlus
             // 
             this.grpPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
             this.grpPlus.Controls.Add(this.lstAffectationPassees);
+            this.grpPlus.Controls.Add(this.btnAnnule);
             this.grpPlus.Controls.Add(this.lstHabilitation);
             this.grpPlus.Controls.Add(this.btnMaj);
             this.grpPlus.Controls.Add(this.chkConge);
-            this.grpPlus.Controls.Add(this.btnMoins);
             this.grpPlus.Controls.Add(this.lblAffectation);
             this.grpPlus.Controls.Add(this.lblHabilitation);
             this.grpPlus.Controls.Add(this.lblCaserneModif);
@@ -380,38 +369,51 @@
             this.grpPlus.Text = "Information carrière";
             this.grpPlus.Visible = false;
             // 
+            // lstAffectationPassees
+            // 
+            this.lstAffectationPassees.FormattingEnabled = true;
+            this.lstAffectationPassees.ItemHeight = 16;
+            this.lstAffectationPassees.Location = new System.Drawing.Point(393, 82);
+            this.lstAffectationPassees.Name = "lstAffectationPassees";
+            this.lstAffectationPassees.ScrollAlwaysVisible = true;
+            this.lstAffectationPassees.Size = new System.Drawing.Size(365, 84);
+            this.lstAffectationPassees.TabIndex = 23;
+            // 
+            // lstHabilitation
+            // 
+            this.lstHabilitation.FormattingEnabled = true;
+            this.lstHabilitation.ItemHeight = 16;
+            this.lstHabilitation.Location = new System.Drawing.Point(18, 82);
+            this.lstHabilitation.Name = "lstHabilitation";
+            this.lstHabilitation.ScrollAlwaysVisible = true;
+            this.lstHabilitation.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lstHabilitation.Size = new System.Drawing.Size(365, 84);
+            this.lstHabilitation.TabIndex = 17;
+            // 
             // btnMaj
             // 
+            this.btnMaj.BackColor = System.Drawing.Color.Honeydew;
+            this.btnMaj.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaj.ForeColor = System.Drawing.Color.Maroon;
+            this.btnMaj.ForeColor = System.Drawing.Color.Green;
             this.btnMaj.Location = new System.Drawing.Point(578, 172);
             this.btnMaj.Name = "btnMaj";
             this.btnMaj.Size = new System.Drawing.Size(179, 31);
             this.btnMaj.TabIndex = 22;
             this.btnMaj.Text = "Mettre à jour";
-            this.btnMaj.UseVisualStyleBackColor = true;
+            this.btnMaj.UseVisualStyleBackColor = false;
+            this.btnMaj.Click += new System.EventHandler(this.btnMaj_Click);
             // 
             // chkConge
             // 
             this.chkConge.AutoSize = true;
-            this.chkConge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkConge.Location = new System.Drawing.Point(30, 179);
+            this.chkConge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkConge.Location = new System.Drawing.Point(30, 172);
             this.chkConge.Name = "chkConge";
-            this.chkConge.Size = new System.Drawing.Size(101, 24);
+            this.chkConge.Size = new System.Drawing.Size(117, 29);
             this.chkConge.TabIndex = 21;
             this.chkConge.Text = "En congé";
             this.chkConge.UseVisualStyleBackColor = true;
-            // 
-            // btnMoins
-            // 
-            this.btnMoins.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoins.Location = new System.Drawing.Point(516, 25);
-            this.btnMoins.Name = "btnMoins";
-            this.btnMoins.Size = new System.Drawing.Size(197, 31);
-            this.btnMoins.TabIndex = 17;
-            this.btnMoins.Text = "Moins d\'informations";
-            this.btnMoins.UseVisualStyleBackColor = true;
-            this.btnMoins.Click += new System.EventHandler(this.btnMoins_Click);
             // 
             // lblAffectation
             // 
@@ -453,6 +455,7 @@
             // 
             // btnPlus
             // 
+            this.btnPlus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlus.Location = new System.Drawing.Point(590, 361);
             this.btnPlus.Name = "btnPlus";
@@ -461,27 +464,6 @@
             this.btnPlus.Text = "Plus d\'informations";
             this.btnPlus.UseVisualStyleBackColor = true;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
-            // 
-            // lstHabilitation
-            // 
-            this.lstHabilitation.FormattingEnabled = true;
-            this.lstHabilitation.ItemHeight = 16;
-            this.lstHabilitation.Location = new System.Drawing.Point(18, 82);
-            this.lstHabilitation.Name = "lstHabilitation";
-            this.lstHabilitation.ScrollAlwaysVisible = true;
-            this.lstHabilitation.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lstHabilitation.Size = new System.Drawing.Size(365, 84);
-            this.lstHabilitation.TabIndex = 17;
-            // 
-            // lstAffectationPassees
-            // 
-            this.lstAffectationPassees.FormattingEnabled = true;
-            this.lstAffectationPassees.ItemHeight = 16;
-            this.lstAffectationPassees.Location = new System.Drawing.Point(393, 82);
-            this.lstAffectationPassees.Name = "lstAffectationPassees";
-            this.lstAffectationPassees.ScrollAlwaysVisible = true;
-            this.lstAffectationPassees.Size = new System.Drawing.Size(365, 84);
-            this.lstAffectationPassees.TabIndex = 23;
             // 
             // uscPersonnel
             // 
@@ -540,12 +522,10 @@
         private System.Windows.Forms.Label lblCaserneModif;
         private System.Windows.Forms.ComboBox cboCaserneModif;
         private System.Windows.Forms.Button btnPlus;
-        private System.Windows.Forms.Button btnMoins;
         private System.Windows.Forms.Label lblAffectation;
         private System.Windows.Forms.Label lblHabilitation;
         private System.Windows.Forms.Button btnMaj;
         private System.Windows.Forms.CheckBox chkConge;
-        private System.Windows.Forms.Button btnValide;
         private System.Windows.Forms.Button btnAnnule;
         private System.Windows.Forms.PictureBox pboGrade;
         private System.Windows.Forms.ListBox lstAffectationPassees;
