@@ -1,0 +1,11 @@
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\Statistiques.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\Statistiques.pdb
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.csproj.AssemblyReference.cache
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.uscStats.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.csproj.GenerateResource.cache
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.csproj.CoreCompileInputs.cache
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.pdb
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\System.Data.SQLite.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\System.Data.SQLite.xml
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statisti.9465184F.Up2Date
