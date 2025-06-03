@@ -193,10 +193,12 @@
             // 
             this.txtTelephone.Location = new System.Drawing.Point(240, 67);
             this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.ShortcutsEnabled = false;
             this.txtTelephone.Size = new System.Drawing.Size(127, 22);
             this.txtTelephone.TabIndex = 13;
             this.txtTelephone.Text = "AAAAAAAAAA";
             this.txtTelephone.Visible = false;
+            this.txtTelephone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelephone_KeyPress);
             // 
             // txtGrade
             // 
