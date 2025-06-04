@@ -65,7 +65,6 @@
             this.grbMenu.Controls.Add(this.btnEngins);
             this.grbMenu.Controls.Add(this.btnTableauDeBord);
             this.grbMenu.Controls.Add(this.btnQuitter);
-            this.grbMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grbMenu.Location = new System.Drawing.Point(12, 12);
             this.grbMenu.Name = "grbMenu";
             this.grbMenu.Size = new System.Drawing.Size(268, 602);
