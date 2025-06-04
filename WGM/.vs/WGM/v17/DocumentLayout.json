@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\personnel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\personnel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\identification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\personnel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\personnel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\personnel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\identification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\identification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\engins.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,23 +66,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Identification.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Identification.cs",
               "RelativeDocumentMoniker": "WGM\\Identification.cs",
               "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Identification.cs [Design]",
               "RelativeToolTip": "WGM\\Identification.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T20:03:33.716Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-04T20:03:33.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Personnel.cs",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Personnel.cs",
               "RelativeDocumentMoniker": "WGM\\Personnel.cs",
@@ -95,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Personnel.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Personnel.Designer.cs",
               "RelativeDocumentMoniker": "WGM\\Personnel.Designer.cs",
@@ -103,24 +102,22 @@
               "RelativeToolTip": "WGM\\Personnel.Designer.cs",
               "ViewState": "AgIAADIBAAAAAAAAAAAYwIoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T19:59:59.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T19:59:59.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Personnel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Personnel.cs",
               "RelativeDocumentMoniker": "WGM\\Personnel.cs",
               "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Personnel.cs [Design]",
               "RelativeToolTip": "WGM\\Personnel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T19:58:43.321Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-04T19:58:43.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "dashBoard.cs",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\dashBoard.cs",
               "RelativeDocumentMoniker": "WGM\\dashBoard.cs",
@@ -128,8 +125,7 @@
               "RelativeToolTip": "WGM\\dashBoard.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAmwBIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T10:04:28.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T10:04:28.296Z"
             },
             {
               "$type": "Document",
@@ -203,20 +199,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Base.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.Designer.cs",
               "RelativeDocumentMoniker": "WGM\\Base.Designer.cs",
               "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.Designer.cs",
               "RelativeToolTip": "WGM\\Base.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAADwv5sAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T19:26:28.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Base.cs",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.cs",
               "RelativeDocumentMoniker": "WGM\\Base.cs",
@@ -229,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Base.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.cs",
               "RelativeDocumentMoniker": "WGM\\Base.cs",

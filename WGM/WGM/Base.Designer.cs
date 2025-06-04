@@ -115,12 +115,14 @@
             this.btnTableauDeBord.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTableauDeBord.BackColor = System.Drawing.Color.White;
+            this.btnTableauDeBord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTableauDeBord.Location = new System.Drawing.Point(57, 63);
             this.btnTableauDeBord.Name = "btnTableauDeBord";
             this.btnTableauDeBord.Size = new System.Drawing.Size(148, 42);
             this.btnTableauDeBord.TabIndex = 1;
             this.btnTableauDeBord.Text = "Tableau de Bord";
-            this.btnTableauDeBord.UseVisualStyleBackColor = true;
+            this.btnTableauDeBord.UseVisualStyleBackColor = false;
             this.btnTableauDeBord.Click += new System.EventHandler(this.btnTableauDeBord_Click);
             // 
             // pnlPage
