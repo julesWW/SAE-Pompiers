@@ -40,8 +40,8 @@
             // 
             // btnQuitter
             // 
-            this.btnQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnQuitter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnQuitter.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnQuitter.BackgroundImage = global::WGM.Properties.Resources.quit;
@@ -73,8 +73,8 @@
             // 
             // btnPersonnel
             // 
-            this.btnPersonnel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnPersonnel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPersonnel.Location = new System.Drawing.Point(57, 159);
             this.btnPersonnel.Name = "btnPersonnel";
@@ -82,12 +82,14 @@
             this.btnPersonnel.TabIndex = 4;
             this.btnPersonnel.Text = "Gestion du personnel";
             this.btnPersonnel.UseVisualStyleBackColor = true;
+            this.btnPersonnel.Click += new System.EventHandler(this.btnPersonnel_Click);
             // 
             // btnStatistiques
             // 
-            this.btnStatistiques.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnStatistiques.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStatistiques.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStatistiques.Location = new System.Drawing.Point(57, 207);
             this.btnStatistiques.Name = "btnStatistiques";
             this.btnStatistiques.Size = new System.Drawing.Size(148, 42);
@@ -97,8 +99,8 @@
             // 
             // btnEngins
             // 
-            this.btnEngins.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnEngins.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEngins.Location = new System.Drawing.Point(57, 111);
             this.btnEngins.Name = "btnEngins";
@@ -106,18 +108,21 @@
             this.btnEngins.TabIndex = 2;
             this.btnEngins.Text = "Gestion des engins";
             this.btnEngins.UseVisualStyleBackColor = true;
+            this.btnEngins.Click += new System.EventHandler(this.btnEngins_Click);
             // 
             // btnTableauDeBord
             // 
-            this.btnTableauDeBord.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnTableauDeBord.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTableauDeBord.BackColor = System.Drawing.Color.White;
+            this.btnTableauDeBord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTableauDeBord.Location = new System.Drawing.Point(57, 63);
             this.btnTableauDeBord.Name = "btnTableauDeBord";
             this.btnTableauDeBord.Size = new System.Drawing.Size(148, 42);
             this.btnTableauDeBord.TabIndex = 1;
             this.btnTableauDeBord.Text = "Tableau de Bord";
-            this.btnTableauDeBord.UseVisualStyleBackColor = true;
+            this.btnTableauDeBord.UseVisualStyleBackColor = false;
             this.btnTableauDeBord.Click += new System.EventHandler(this.btnTableauDeBord_Click);
             // 
             // pnlPage
