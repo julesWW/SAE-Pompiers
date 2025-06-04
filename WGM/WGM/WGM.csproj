@@ -70,6 +70,12 @@
     <Compile Include="Cloture.Designer.cs">
       <DependentUpon>Cloture.cs</DependentUpon>
     </Compile>
+    <Compile Include="Identification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Identification.Designer.cs">
+      <DependentUpon>Identification.cs</DependentUpon>
+    </Compile>
     <Compile Include="mesDatas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,6 +91,18 @@
     <Compile Include="dashBoard.Designer.cs">
       <DependentUpon>dashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Engins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Engins.Designer.cs">
+      <DependentUpon>Engins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personnel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Personnel.Designer.cs">
+      <DependentUpon>Personnel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base.resx">
       <DependentUpon>Base.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dashBoard.resx">
       <DependentUpon>dashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Engins.resx">
+      <DependentUpon>Engins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,6 +162,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\fondAppliPompierV2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BRS.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCF.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CFF.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EPA.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FCYN.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FPT.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VID.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VPC.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VSAV.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VSR.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VSS.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CDT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CNE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LCL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SGT.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
