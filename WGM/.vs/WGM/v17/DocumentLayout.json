@@ -1,10 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\",
+  "WorkspaceRootPath": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -12,19 +11,14 @@
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\wgm\\wgm\\missions.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\missions.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\missions.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|c:\\users\\guill\\documents\\sae-d21-pompier\\my-awesome-project\\wgm\\wgm\\creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 4de82b4ea78a76a991d694b89cd4a557385384bb
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\wgm\\creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\creermission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\dashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\missions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\missions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0CCF13D-6E84-4DE2-9675-8923A3E5CD90}|WGM\\WGM.csproj|solutionrelative:wgm\\base.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> 4de82b4ea78a76a991d694b89cd4a557385384bb
     }
   ],
   "DocumentGroupContainers": [
@@ -60,7 +42,6 @@
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "Missions.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Missions.Designer.cs",
@@ -68,22 +49,11 @@
               "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Missions.Designer.cs",
               "RelativeToolTip": "WGM\\Missions.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-=======
-              "DocumentIndex": 0,
-              "Title": "CreerMission.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\CreerMission.cs",
-              "RelativeDocumentMoniker": "WGM\\CreerMission.cs",
-              "ToolTip": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\CreerMission.cs",
-              "RelativeToolTip": "WGM\\CreerMission.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAgwIUAAABDAAAAAAAAAA==",
->>>>>>> 4de82b4ea78a76a991d694b89cd4a557385384bb
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T11:48:35.748Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2025-05-13T20:06:22.365Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "dashBoard.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\dashBoard.Designer.cs",
@@ -120,58 +90,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-=======
-              "DocumentIndex": 1,
-              "Title": "CreerMission.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\CreerMission.cs",
-              "RelativeDocumentMoniker": "WGM\\CreerMission.cs",
-              "ToolTip": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\CreerMission.cs [Design]",
-              "RelativeToolTip": "WGM\\CreerMission.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T11:47:50.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
->>>>>>> 4de82b4ea78a76a991d694b89cd4a557385384bb
               "Title": "Base.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\Base.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.Designer.cs",
               "RelativeDocumentMoniker": "WGM\\Base.Designer.cs",
-              "ToolTip": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\Base.Designer.cs",
+              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.Designer.cs",
               "RelativeToolTip": "WGM\\Base.Designer.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAwwFMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAUwKUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T19:26:28.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Base.cs",
-              "DocumentMoniker": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\Base.cs",
+              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.cs",
               "RelativeDocumentMoniker": "WGM\\Base.cs",
-              "ToolTip": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\Base.cs",
+              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.cs",
               "RelativeToolTip": "WGM\\Base.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAqwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:21:27.365Z",
-              "EditorCaption": ""
+              "ViewState": "AgIAACoAAAAAAAAAAAAlwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-05-13T19:21:27.365Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 1,
-=======
-              "DocumentIndex": 3,
->>>>>>> 4de82b4ea78a76a991d694b89cd4a557385384bb
               "Title": "Base.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\Base.cs",
+              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.cs",
               "RelativeDocumentMoniker": "WGM\\Base.cs",
-              "ToolTip": "C:\\Users\\guill\\Documents\\SAE-D21-Pompier\\my-awesome-project\\WGM\\WGM\\Base.cs [Design]",
+              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\WGM\\WGM\\Base.cs [Design]",
               "RelativeToolTip": "WGM\\Base.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T19:02:31.693Z",
-              "EditorCaption": " [Design]"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-05-13T19:02:31.693Z"
             }
           ]
         }
