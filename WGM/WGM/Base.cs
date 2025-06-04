@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Pinpon;
 using dashBoard;
 using Engins;
+using Personnel;
 
 namespace WGM
 {
@@ -30,11 +31,7 @@ namespace WGM
             Application.Exit();
         }
 
-        private void btnNouvMissionTemp_Click(object sender, EventArgs e)
-        {
-   
-        }
-
+  
         private void Form1_Load(object sender, EventArgs e)
         {
             connec = Connexion.Connec;
@@ -57,7 +54,9 @@ namespace WGM
             MesDatas.DsGlobal.Tables["Engin"].Constraints.Add(FK_Caserne);
 
             MesDatas.DsGlobal.Relations.Add("relEnginCaserne", MesDatas.DsGlobal.Tables["Caserne"].Columns["id"], MesDatas.DsGlobal.Tables["Engin"].Columns["idCaserne"]);
-
+            MesDatas.DsGlobal.Relations.Add("relAffectationCaserne",
+                MesDatas.DsGlobal.Tables["Caserne"].Columns["id"],
+                MesDatas.DsGlobal.Tables["Affectation"].Columns["idCaserne"]);
             changePage();
         }
 
@@ -74,18 +73,38 @@ namespace WGM
                 USC_Engins en = new USC_Engins ();
                 pnlPage.Controls.Add(en);
             }
+            if (Page == 2)
+            {
+                uscPersonnel pe = new uscPersonnel(1);
+                pnlPage.Controls.Add(pe);
+            }
         }
 
         private void btnTableauDeBord_Click(object sender, EventArgs e)
         {
-            Page = 0;
-            changePage();
+            if (Page != 0)
+            {
+                Page = 0;
+                changePage();
+            }
         }
 
         private void btnEngins_Click(object sender, EventArgs e)
         {
-            Page = 1;
-            changePage();
+            if (Page != 1)
+            {
+                Page = 1;
+                changePage();
+            }
+        }
+
+        private void btnPersonnel_Click(object sender, EventArgs e)
+        {
+            if (Page != 2)
+            {
+                Page = 2;
+                changePage();
+            }
         }
     }
 }

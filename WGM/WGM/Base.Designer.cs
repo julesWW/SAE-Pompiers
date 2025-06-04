@@ -82,6 +82,7 @@
             this.btnPersonnel.TabIndex = 4;
             this.btnPersonnel.Text = "Gestion du personnel";
             this.btnPersonnel.UseVisualStyleBackColor = true;
+            this.btnPersonnel.Click += new System.EventHandler(this.btnPersonnel_Click);
             // 
             // btnStatistiques
             // 
