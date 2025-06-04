@@ -74,7 +74,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(690, 9);
+            this.lblDate.Location = new System.Drawing.Point(340, 9);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(141, 25);
             this.lblDate.TabIndex = 1;
@@ -94,7 +94,7 @@
             this.grpInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpInfo.Location = new System.Drawing.Point(35, 37);
             this.grpInfo.Name = "grpInfo";
-            this.grpInfo.Size = new System.Drawing.Size(951, 168);
+            this.grpInfo.Size = new System.Drawing.Size(664, 168);
             this.grpInfo.TabIndex = 2;
             this.grpInfo.TabStop = false;
             this.grpInfo.Text = "Informations usager";
@@ -102,7 +102,7 @@
             // txtVille
             // 
             this.txtVille.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVille.Location = new System.Drawing.Point(589, 111);
+            this.txtVille.Location = new System.Drawing.Point(450, 112);
             this.txtVille.Name = "txtVille";
             this.txtVille.Size = new System.Drawing.Size(183, 27);
             this.txtVille.TabIndex = 8;
@@ -110,7 +110,7 @@
             // txtCodePost
             // 
             this.txtCodePost.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodePost.Location = new System.Drawing.Point(589, 78);
+            this.txtCodePost.Location = new System.Drawing.Point(450, 79);
             this.txtCodePost.Name = "txtCodePost";
             this.txtCodePost.Size = new System.Drawing.Size(100, 27);
             this.txtCodePost.TabIndex = 7;
@@ -118,7 +118,7 @@
             // txtRue
             // 
             this.txtRue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRue.Location = new System.Drawing.Point(589, 45);
+            this.txtRue.Location = new System.Drawing.Point(450, 46);
             this.txtRue.Name = "txtRue";
             this.txtRue.Size = new System.Drawing.Size(183, 27);
             this.txtRue.TabIndex = 6;
@@ -127,7 +127,7 @@
             // 
             this.lblVille.AutoSize = true;
             this.lblVille.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVille.Location = new System.Drawing.Point(532, 114);
+            this.lblVille.Location = new System.Drawing.Point(393, 115);
             this.lblVille.Name = "lblVille";
             this.lblVille.Size = new System.Drawing.Size(51, 20);
             this.lblVille.TabIndex = 5;
@@ -137,7 +137,7 @@
             // 
             this.lblCodePostal.AutoSize = true;
             this.lblCodePostal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodePostal.Location = new System.Drawing.Point(468, 81);
+            this.lblCodePostal.Location = new System.Drawing.Point(329, 82);
             this.lblCodePostal.Name = "lblCodePostal";
             this.lblCodePostal.Size = new System.Drawing.Size(117, 20);
             this.lblCodePostal.TabIndex = 4;
@@ -147,7 +147,7 @@
             // 
             this.lblRue.AutoSize = true;
             this.lblRue.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRue.Location = new System.Drawing.Point(534, 48);
+            this.lblRue.Location = new System.Drawing.Point(395, 49);
             this.lblRue.Name = "lblRue";
             this.lblRue.Size = new System.Drawing.Size(49, 20);
             this.lblRue.TabIndex = 3;
@@ -157,7 +157,7 @@
             // 
             this.lblAddr.AutoSize = true;
             this.lblAddr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddr.Location = new System.Drawing.Point(603, 23);
+            this.lblAddr.Location = new System.Drawing.Point(464, 24);
             this.lblAddr.Name = "lblAddr";
             this.lblAddr.Size = new System.Drawing.Size(133, 20);
             this.lblAddr.TabIndex = 2;
@@ -189,18 +189,18 @@
             this.grpDecision.Controls.Add(this.lblCaserne);
             this.grpDecision.Controls.Add(this.lblNature);
             this.grpDecision.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpDecision.Location = new System.Drawing.Point(35, 234);
+            this.grpDecision.Location = new System.Drawing.Point(35, 211);
             this.grpDecision.Name = "grpDecision";
-            this.grpDecision.Size = new System.Drawing.Size(951, 117);
+            this.grpDecision.Size = new System.Drawing.Size(664, 140);
             this.grpDecision.TabIndex = 3;
             this.grpDecision.TabStop = false;
             this.grpDecision.Text = "Décision du régulateur";
             // 
             // btnConsult
             // 
-            this.btnConsult.Location = new System.Drawing.Point(361, 82);
+            this.btnConsult.Location = new System.Drawing.Point(425, 43);
             this.btnConsult.Name = "btnConsult";
-            this.btnConsult.Size = new System.Drawing.Size(157, 29);
+            this.btnConsult.Size = new System.Drawing.Size(92, 52);
             this.btnConsult.TabIndex = 5;
             this.btnConsult.Text = "Créer équipe";
             this.btnConsult.UseVisualStyleBackColor = true;
@@ -209,7 +209,7 @@
             // cboCaserne
             // 
             this.cboCaserne.FormattingEnabled = true;
-            this.cboCaserne.Location = new System.Drawing.Point(543, 40);
+            this.cboCaserne.Location = new System.Drawing.Point(179, 72);
             this.cboCaserne.Name = "cboCaserne";
             this.cboCaserne.Size = new System.Drawing.Size(183, 28);
             this.cboCaserne.TabIndex = 3;
@@ -218,7 +218,7 @@
             // cboSinistre
             // 
             this.cboSinistre.FormattingEnabled = true;
-            this.cboSinistre.Location = new System.Drawing.Point(164, 40);
+            this.cboSinistre.Location = new System.Drawing.Point(173, 26);
             this.cboSinistre.Name = "cboSinistre";
             this.cboSinistre.Size = new System.Drawing.Size(189, 28);
             this.cboSinistre.TabIndex = 2;
@@ -228,7 +228,7 @@
             // 
             this.lblCaserne.AutoSize = true;
             this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCaserne.Location = new System.Drawing.Point(368, 43);
+            this.lblCaserne.Location = new System.Drawing.Point(4, 75);
             this.lblCaserne.Name = "lblCaserne";
             this.lblCaserne.Size = new System.Drawing.Size(169, 20);
             this.lblCaserne.TabIndex = 1;
@@ -238,7 +238,7 @@
             // 
             this.lblNature.AutoSize = true;
             this.lblNature.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNature.Location = new System.Drawing.Point(6, 43);
+            this.lblNature.Location = new System.Drawing.Point(15, 29);
             this.lblNature.Name = "lblNature";
             this.lblNature.Size = new System.Drawing.Size(152, 20);
             this.lblNature.TabIndex = 0;
@@ -301,10 +301,10 @@
             // 
             // btnFermer
             // 
-            this.btnFermer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFermer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnFermer.BackColor = System.Drawing.Color.LightCoral;
             this.btnFermer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFermer.Location = new System.Drawing.Point(35, 563);
+            this.btnFermer.Location = new System.Drawing.Point(17, 565);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(103, 35);
             this.btnFermer.TabIndex = 5;
@@ -318,7 +318,7 @@
             this.btnValider.BackColor = System.Drawing.Color.GreenYellow;
             this.btnValider.Enabled = false;
             this.btnValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnValider.Location = new System.Drawing.Point(883, 563);
+            this.btnValider.Location = new System.Drawing.Point(875, 565);
             this.btnValider.Name = "btnValider";
             this.btnValider.Size = new System.Drawing.Size(103, 35);
             this.btnValider.TabIndex = 6;
@@ -330,8 +330,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1008, 602);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
+            this.ClientSize = new System.Drawing.Size(1000, 604);
             this.Controls.Add(this.btnValider);
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.grpMobilisation);
