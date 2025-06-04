@@ -16,7 +16,7 @@ namespace dashBoard
 {
     public partial class uscdashBoard : UserControl
     {
-        SQLiteConnection connec;
+        //SQLiteConnection connec;
         public uscdashBoard()
         {
             InitializeComponent();
