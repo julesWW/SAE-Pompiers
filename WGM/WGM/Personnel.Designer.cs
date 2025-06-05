@@ -34,7 +34,6 @@
             this.cboCaserne = new System.Windows.Forms.ComboBox();
             this.cboPompier = new System.Windows.Forms.ComboBox();
             this.grpGeneral = new System.Windows.Forms.GroupBox();
-            this.pboGrade = new System.Windows.Forms.PictureBox();
             this.grpCarriere = new System.Windows.Forms.GroupBox();
             this.btnEdit = new System.Windows.Forms.Button();
             this.txtBip = new System.Windows.Forms.TextBox();
@@ -63,17 +62,20 @@
             this.lblCaserneModif = new System.Windows.Forms.Label();
             this.cboCaserneModif = new System.Windows.Forms.ComboBox();
             this.btnPlus = new System.Windows.Forms.Button();
+            this.pboGrade = new System.Windows.Forms.PictureBox();
+            this.pnlTitre = new System.Windows.Forms.Panel();
             this.grpGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).BeginInit();
             this.grpCarriere.SuspendLayout();
             this.grpPlus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).BeginInit();
+            this.pnlTitre.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblPersonnel
             // 
             this.lblPersonnel.AutoSize = true;
             this.lblPersonnel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPersonnel.Location = new System.Drawing.Point(267, 15);
+            this.lblPersonnel.Location = new System.Drawing.Point(213, 2);
             this.lblPersonnel.Name = "lblPersonnel";
             this.lblPersonnel.Size = new System.Drawing.Size(263, 29);
             this.lblPersonnel.TabIndex = 0;
@@ -83,7 +85,7 @@
             // 
             this.lblCaserne.AutoSize = true;
             this.lblCaserne.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCaserne.Location = new System.Drawing.Point(55, 53);
+            this.lblCaserne.Location = new System.Drawing.Point(1, 40);
             this.lblCaserne.Name = "lblCaserne";
             this.lblCaserne.Size = new System.Drawing.Size(240, 24);
             this.lblCaserne.TabIndex = 1;
@@ -93,7 +95,7 @@
             // 
             this.lblPompier.AutoSize = true;
             this.lblPompier.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPompier.Location = new System.Drawing.Point(488, 53);
+            this.lblPompier.Location = new System.Drawing.Point(434, 40);
             this.lblPompier.Name = "lblPompier";
             this.lblPompier.Size = new System.Drawing.Size(231, 24);
             this.lblPompier.TabIndex = 2;
@@ -102,7 +104,7 @@
             // cboCaserne
             // 
             this.cboCaserne.FormattingEnabled = true;
-            this.cboCaserne.Location = new System.Drawing.Point(59, 80);
+            this.cboCaserne.Location = new System.Drawing.Point(5, 67);
             this.cboCaserne.Name = "cboCaserne";
             this.cboCaserne.Size = new System.Drawing.Size(236, 24);
             this.cboCaserne.TabIndex = 3;
@@ -111,7 +113,7 @@
             // cboPompier
             // 
             this.cboPompier.FormattingEnabled = true;
-            this.cboPompier.Location = new System.Drawing.Point(492, 80);
+            this.cboPompier.Location = new System.Drawing.Point(438, 67);
             this.cboPompier.Name = "cboPompier";
             this.cboPompier.Size = new System.Drawing.Size(227, 24);
             this.cboPompier.TabIndex = 4;
@@ -135,16 +137,6 @@
             this.grpGeneral.Size = new System.Drawing.Size(775, 248);
             this.grpGeneral.TabIndex = 5;
             this.grpGeneral.TabStop = false;
-            // 
-            // pboGrade
-            // 
-            this.pboGrade.BackgroundImage = global::WGM.Properties.Resources.SGT;
-            this.pboGrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pboGrade.Location = new System.Drawing.Point(303, 32);
-            this.pboGrade.Name = "pboGrade";
-            this.pboGrade.Size = new System.Drawing.Size(100, 100);
-            this.pboGrade.TabIndex = 9;
-            this.pboGrade.TabStop = false;
             // 
             // grpCarriere
             // 
@@ -467,31 +459,51 @@
             this.btnPlus.UseVisualStyleBackColor = true;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
+            // pboGrade
+            // 
+            this.pboGrade.BackgroundImage = global::WGM.Properties.Resources.SGT;
+            this.pboGrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pboGrade.Location = new System.Drawing.Point(303, 32);
+            this.pboGrade.Name = "pboGrade";
+            this.pboGrade.Size = new System.Drawing.Size(100, 100);
+            this.pboGrade.TabIndex = 9;
+            this.pboGrade.TabStop = false;
+            // 
+            // pnlTitre
+            // 
+            this.pnlTitre.Controls.Add(this.cboPompier);
+            this.pnlTitre.Controls.Add(this.cboCaserne);
+            this.pnlTitre.Controls.Add(this.lblPersonnel);
+            this.pnlTitre.Controls.Add(this.lblPompier);
+            this.pnlTitre.Controls.Add(this.lblCaserne);
+            this.pnlTitre.Location = new System.Drawing.Point(70, 8);
+            this.pnlTitre.Name = "pnlTitre";
+            this.pnlTitre.Size = new System.Drawing.Size(667, 97);
+            this.pnlTitre.TabIndex = 18;
+            // 
             // uscPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
+            this.Controls.Add(this.pnlTitre);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.grpPlus);
             this.Controls.Add(this.grpGeneral);
-            this.Controls.Add(this.cboPompier);
-            this.Controls.Add(this.cboCaserne);
-            this.Controls.Add(this.lblPompier);
-            this.Controls.Add(this.lblCaserne);
-            this.Controls.Add(this.lblPersonnel);
             this.Name = "uscPersonnel";
             this.Size = new System.Drawing.Size(800, 600);
             this.Load += new System.EventHandler(this.uscPersonnel_Load);
+            this.SizeChanged += new System.EventHandler(this.uscPersonnel_SizeChanged);
             this.grpGeneral.ResumeLayout(false);
             this.grpGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).EndInit();
             this.grpCarriere.ResumeLayout(false);
             this.grpCarriere.PerformLayout();
             this.grpPlus.ResumeLayout(false);
             this.grpPlus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).EndInit();
+            this.pnlTitre.ResumeLayout(false);
+            this.pnlTitre.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -532,5 +544,6 @@
         private System.Windows.Forms.PictureBox pboGrade;
         private System.Windows.Forms.ListBox lstAffectationPassees;
         private System.Windows.Forms.ListBox lstHabilitation;
+        private System.Windows.Forms.Panel pnlTitre;
     }
 }

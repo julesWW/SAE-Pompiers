@@ -30,6 +30,7 @@ namespace Personnel
         {
             btnVoir.Text = "👁️";
             txtMdp.UseSystemPasswordChar = true;
+            txtMdp.Focus();
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -63,6 +64,27 @@ namespace Personnel
         {
             DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void txtMdp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Keys)e.KeyChar == Keys.Enter)
+            {
+                btnConnect_Click (sender, e);
+            }
+        }
+
+        private void txtIdentifiant_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Keys)e.KeyChar == Keys.Enter)
+            {
+                btnConnect_Click(sender, e);
+            }
+        }
+
+        private void txtIdentifiant_TextChanged(object sender, EventArgs e)
+        {
+            lblError.Visible = false;
         }
     }
 }

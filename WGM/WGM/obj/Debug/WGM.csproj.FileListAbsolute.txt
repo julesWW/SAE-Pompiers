@@ -74,3 +74,7 @@ C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WG
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\QuestPDF.xml
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\Mission.frmCR.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\Personnel.frmIdentification.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\Mission.uscMissions.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\Personnel.uscPersonnel.resources

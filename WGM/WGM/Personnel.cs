@@ -75,11 +75,13 @@ namespace Personnel
             cboGrade.Visible = false;
             txtTelephone.Visible = false;
             txtBip.Visible = false;
+            btnEdit.Visible = false;
             cboPompier_SelectedIndexChanged(sender, e);
         }
 
         private void uscPersonnel_Load(object sender, EventArgs e)
         {
+            uscPersonnel_SizeChanged(sender, e);
             BindingSource bsCaserne = new BindingSource();
 
             bsCaserne.DataSource = MesDatas.DsGlobal.Tables["Caserne"];
@@ -369,6 +371,21 @@ namespace Personnel
                     e.Handled = true;
                 }
             }
+        }
+
+        private void uscPersonnel_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.Width > grpGeneral.Width)
+            {
+                grpGeneral.Left = (int)((this.Width - grpGeneral.Width) / 2.0);
+                grpPlus.Left = (int)((this.Width - grpPlus.Width) / 2.0);
+            }
+            if (this.Width > pnlTitre.Width)
+            {
+                pnlTitre.Left = (int)((this.Width - pnlTitre.Width) / 2.0);
+            }
+            lblPersonnel.Left = (int)((pnlTitre.Width - lblPersonnel.Width) / 2.0);
+            btnPlus.Left = (int)(this.Width - btnPlus.Width - grpPlus.Left);
         }
     }
 }

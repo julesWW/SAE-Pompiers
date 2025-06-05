@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Mission;
 using WGM;
 using Pinpon;
+using Personnel;
 
 namespace dashBoard
 {
@@ -76,12 +77,31 @@ namespace dashBoard
         //public event Nouveau nouv;
         private void btnNouvelle_Click(object sender, EventArgs e)
         {
-            //if (this.nouv != null)
-            //{
-            //    this.nouv(sender, e);
-            //}
-            frmNouvMission nouvM = new frmNouvMission();
-            nouvM.ShowDialog();
+            frmIdentification ID = new frmIdentification();
+            ID.StartPosition = FormStartPosition.CenterParent;
+            if (ID.ShowDialog() == DialogResult.OK)
+            {
+                frmNouvMission nouvM = new frmNouvMission();
+                nouvM.ShowDialog();
+            }
+        }
+
+        private void uscdashBoard_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.Width > pnlTitre.Width)
+            {
+                pnlTitre.Left = (int)((this.Width - pnlTitre.Width) / 2.0);
+            }
+            lblDashBoard.Left = (int)((pnlTitre.Width - lblDashBoard.Width) / 2.0);
+            if (flpMissions.Controls.Count > 0 && flpMissions.Width> flpMissions.Controls[0].Width)
+            {
+                int paddinggauche = (flpMissions.Width - ((flpMissions.Width / flpMissions.Controls[0].Width) * flpMissions.Controls[0].Width)) / 2;
+                flpMissions.Padding = new Padding(paddinggauche-10, 0, 0, 0);
+            }
+            else
+            {
+                flpMissions.Padding = new Padding(0, 0, 0, 0);
+            }
         }
     }
 }
