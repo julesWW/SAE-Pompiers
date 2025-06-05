@@ -38,8 +38,8 @@
             // 
             this.lblDashBoard.AutoSize = true;
             this.lblDashBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDashBoard.ForeColor = System.Drawing.Color.White;
-            this.lblDashBoard.Location = new System.Drawing.Point(272, 17);
+            this.lblDashBoard.ForeColor = System.Drawing.Color.Black;
+            this.lblDashBoard.Location = new System.Drawing.Point(271, 34);
             this.lblDashBoard.Name = "lblDashBoard";
             this.lblDashBoard.Size = new System.Drawing.Size(207, 29);
             this.lblDashBoard.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // btnNouvelle
             // 
-            this.btnNouvelle.BackColor = System.Drawing.Color.LightCoral;
+            this.btnNouvelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
             this.btnNouvelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNouvelle.Location = new System.Drawing.Point(615, 17);
             this.btnNouvelle.Name = "btnNouvelle";
@@ -61,7 +61,7 @@
             // 
             this.chkEnCours.AutoSize = true;
             this.chkEnCours.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEnCours.ForeColor = System.Drawing.Color.White;
+            this.chkEnCours.ForeColor = System.Drawing.Color.Black;
             this.chkEnCours.Location = new System.Drawing.Point(41, 36);
             this.chkEnCours.Name = "chkEnCours";
             this.chkEnCours.Size = new System.Drawing.Size(111, 29);
@@ -82,7 +82,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Brown;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.Controls.Add(this.flpMissions);
             this.Controls.Add(this.chkEnCours);
             this.Controls.Add(this.btnNouvelle);
