@@ -67,6 +67,7 @@ namespace WGM
             {
                 btnTableauDeBord.BackColor = Color.FromArgb(239, 180, 149);
                 uscdashBoard db = new uscdashBoard();
+                db.Dock=DockStyle.Fill;
                 pnlPage.Controls.Add(db);
             }
             else
@@ -77,6 +78,7 @@ namespace WGM
             {
                 btnEngins.BackColor = Color.FromArgb(239, 180, 149);
                 USC_Engins en = new USC_Engins ();
+                en.Dock = DockStyle.Fill;
                 pnlPage.Controls.Add(en);
             }
             else
@@ -87,6 +89,7 @@ namespace WGM
             {
                 btnPersonnel.BackColor = Color.FromArgb(239, 180, 149);
                 uscPersonnel pe = new uscPersonnel(1);
+                pe.Dock = DockStyle.Fill;
                 pnlPage.Controls.Add(pe);
             }
             else

@@ -55,6 +55,8 @@
             this.txtIdentifiant.Name = "txtIdentifiant";
             this.txtIdentifiant.Size = new System.Drawing.Size(296, 30);
             this.txtIdentifiant.TabIndex = 1;
+            this.txtIdentifiant.TextChanged += new System.EventHandler(this.txtIdentifiant_TextChanged);
+            this.txtIdentifiant.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdentifiant_KeyPress);
             // 
             // txtMdp
             // 
@@ -65,6 +67,7 @@
             this.txtMdp.TabIndex = 3;
             this.txtMdp.UseSystemPasswordChar = true;
             this.txtMdp.TextChanged += new System.EventHandler(this.txtMdp_TextChanged);
+            this.txtMdp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMdp_KeyPress);
             // 
             // lblMdp
             // 

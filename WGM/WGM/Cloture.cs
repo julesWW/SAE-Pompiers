@@ -55,14 +55,54 @@ namespace Mission
                     r["terminee"] = 1;
                 }
             }
+
+            foreach (DataRow r in MesDatas.DsGlobal.Tables["PartirAvec"].Rows)
+            {
+                if (Convert.ToInt16(r["idMission"]) == id)
+                {
+                    int Caserne = Convert.ToInt16(r["idCaserne"]);
+                    String Engin = r["codeTypeEngin"].ToString();
+                    int numEngin = Convert.ToInt16(r["numeroEngin"]);
+
+                    foreach (DataRow r1 in MesDatas.DsGlobal.Tables["Engin"].Rows)
+                    {
+                        if (Convert.ToInt16(r1["idCaserne"]) == Caserne && r1["codeTypeEngin"].ToString() == Engin && Convert.ToInt16(r1["numero"]) == numEngin)
+                        {
+                            r1["enMission"] = "0";
+                        }
+                    }
+                }
+            }
+
+            foreach (DataRow r in MesDatas.DsGlobal.Tables["Mobiliser"].Rows)
+            {
+                if (Convert.ToInt16(r["idMission"]) == id)
+                {
+                    string pompier = r["matriculePompier"].ToString();
+
+                    foreach (DataRow r1 in MesDatas.DsGlobal.Tables["Pompier"].Rows)
+                    {
+                        if ( r1["matricule"].ToString() == pompier)
+                        {
+                            r1["enMission"] = "0";
+                        }
+                    }
+                }
+            }
+
+
+            string[] TableMaJ = new string[] { "Engin", "Mission", "PartirAvec", "Pompier", "Mobiliser" };
             connec = Connexion.Connec;
-            string req = "select * from Mission";
-            SQLiteCommand cmd = new SQLiteCommand(req, connec);
-            SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
-            SQLiteCommandBuilder builder = new SQLiteCommandBuilder(da);
-            da.Update(MesDatas.DsGlobal, "Mission");
-            DialogResult = DialogResult.OK;
+            foreach (string t in TableMaJ)
+            {
+                string req = "select * from "+t;
+                SQLiteCommand cmd = new SQLiteCommand(req, connec);
+                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
+                SQLiteCommandBuilder builder = new SQLiteCommandBuilder(da);
+                da.Update(MesDatas.DsGlobal, t);
+            }
             Connexion.FermerConnexion();
+            DialogResult = DialogResult.OK;
         }
     }
 }
