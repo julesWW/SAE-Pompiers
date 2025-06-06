@@ -255,8 +255,8 @@ namespace Mission
                                 if (r2["reparationsEventuelles"] != DBNull.Value)
                                 {
                                     Engin += " (" + r2["reparationsEventuelles"].ToString() + ")";
-                                    col.Item().Text(Engin);
                                 }
+                                col.Item().Text(Engin);
                             }
                         }
                     });
