@@ -251,7 +251,12 @@ namespace Mission
                                         nomTypeEngin = r3["nom"].ToString();
                                     }
                                 }
-                                col.Item().Text("→ " + nomTypeEngin + " " + r2["idCaserne"].ToString() + "-" + r2["codeTypeEngin"] + "-" + r2["numeroEngin"] + r2["reparationsEventuelles"]);
+                                String Engin = ("→ " + nomTypeEngin + " " + r2["idCaserne"].ToString() + "-" + r2["codeTypeEngin"] + "-" + r2["numeroEngin"]);
+                                if (r2["reparationsEventuelles"] != DBNull.Value)
+                                {
+                                    Engin += " (" + r2["reparationsEventuelles"].ToString() + ")";
+                                    col.Item().Text(Engin);
+                                }
                             }
                         }
                     });
