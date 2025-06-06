@@ -40,4 +40,37 @@ C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\da
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.exe.config
 C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.Up2Date
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\Engins.USC_Engins.resources
-C:\Users\guill\Documents\SAE-D21-Pompier\my-awesome-project\WGM\WGM\obj\Debug\Engins.USC_Engins.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-arm64\native\libcrypto.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-arm64\native\libjpeg.so.8
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-arm64\native\libqpdf.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-arm64\native\libQuestPdfSkia.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-musl-x64\native\libcrypto.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-musl-x64\native\libjpeg.so.8
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-musl-x64\native\libqpdf.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-musl-x64\native\libQuestPdfSkia.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-x64\native\libcrypto.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-x64\native\libjpeg.so.8
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-x64\native\libqpdf.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\linux-x64\native\libQuestPdfSkia.so
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-arm64\native\libcrypto.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-arm64\native\libjpeg.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-arm64\native\libqpdf.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-arm64\native\libQuestPdfSkia.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-x64\native\libcrypto.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-x64\native\libjpeg.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-x64\native\libqpdf.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\osx-x64\native\libQuestPdfSkia.dylib
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x64\native\libgcc_s_seh-1.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x64\native\libstdc++-6.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x64\native\libwinpthread-1.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x64\native\qpdf.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x64\native\QuestPdfSkia.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x86\native\libgcc_s_dw2-1.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x86\native\libstdc++-6.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x86\native\libwinpthread-1.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x86\native\qpdf.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\runtimes\win-x86\native\QuestPdfSkia.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\QuestPDF.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\QuestPDF.xml
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\bin\Debug\System.Numerics.Vectors.xml

@@ -316,6 +316,7 @@
             // 
             this.btnValider.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnValider.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnValider.Enabled = false;
             this.btnValider.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnValider.Location = new System.Drawing.Point(875, 565);
             this.btnValider.Name = "btnValider";
