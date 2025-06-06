@@ -65,18 +65,33 @@ namespace WGM
             pnlPage.Controls.Clear();
             if(Page==0)
             {
+                btnTableauDeBord.BackColor = Color.FromArgb(239, 180, 149);
                 uscdashBoard db = new uscdashBoard();
                 pnlPage.Controls.Add(db);
             }
+            else
+            {
+                btnTableauDeBord.BackColor = Color.FromArgb(239, 213, 149);
+            }
             if (Page == 1)
             {
+                btnEngins.BackColor = Color.FromArgb(239, 180, 149);
                 USC_Engins en = new USC_Engins ();
                 pnlPage.Controls.Add(en);
             }
+            else
+            {
+                btnEngins.BackColor = Color.FromArgb(239, 213, 149);
+            }
             if (Page == 2)
             {
+                btnPersonnel.BackColor = Color.FromArgb(239, 180, 149);
                 uscPersonnel pe = new uscPersonnel(1);
                 pnlPage.Controls.Add(pe);
+            }
+            else
+            {
+                btnPersonnel.BackColor = Color.FromArgb(239, 213, 149);
             }
         }
 
