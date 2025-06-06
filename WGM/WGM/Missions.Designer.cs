@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uscMissions));
             this.lblIdMission = new System.Windows.Forms.Label();
             this.lblDebut = new System.Windows.Forms.Label();
             this.lblCaserne = new System.Windows.Forms.Label();
             this.lblCategorie = new System.Windows.Forms.Label();
             this.lblMotif = new System.Windows.Forms.Label();
             this.lblFin = new System.Windows.Forms.Label();
+            this.btnDeroule = new System.Windows.Forms.Button();
+            this.rtxtCompteRendu = new System.Windows.Forms.RichTextBox();
             this.btnPDF = new System.Windows.Forms.Button();
             this.btnCloture = new System.Windows.Forms.Button();
             this.pboAlert = new System.Windows.Forms.PictureBox();
-            this.btnDeroule = new System.Windows.Forms.Button();
-            this.rtxtCompteRendu = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pboAlert)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +116,33 @@
             this.lblFin.Text = "Fin le";
             this.lblFin.Visible = false;
             // 
+            // btnDeroule
+            // 
+            this.btnDeroule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
+            this.btnDeroule.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeroule.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeroule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeroule.Location = new System.Drawing.Point(0, 122);
+            this.btnDeroule.Name = "btnDeroule";
+            this.btnDeroule.Size = new System.Drawing.Size(823, 30);
+            this.btnDeroule.TabIndex = 10;
+            this.btnDeroule.Tag = "Close";
+            this.btnDeroule.Text = "▼";
+            this.btnDeroule.UseVisualStyleBackColor = false;
+            this.btnDeroule.Click += new System.EventHandler(this.btnDeroule_Click);
+            // 
+            // rtxtCompteRendu
+            // 
+            this.rtxtCompteRendu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.rtxtCompteRendu.Location = new System.Drawing.Point(10, 267);
+            this.rtxtCompteRendu.MaximumSize = new System.Drawing.Size(800, 150);
+            this.rtxtCompteRendu.MinimumSize = new System.Drawing.Size(800, 150);
+            this.rtxtCompteRendu.Name = "rtxtCompteRendu";
+            this.rtxtCompteRendu.ReadOnly = true;
+            this.rtxtCompteRendu.Size = new System.Drawing.Size(800, 150);
+            this.rtxtCompteRendu.TabIndex = 12;
+            this.rtxtCompteRendu.Text = "";
+            // 
             // btnPDF
             // 
             this.btnPDF.BackgroundImage = global::WGM.Properties.Resources.downloadPDF;
@@ -149,32 +175,6 @@
             this.pboAlert.TabIndex = 0;
             this.pboAlert.TabStop = false;
             // 
-            // btnDeroule
-            // 
-            this.btnDeroule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
-            this.btnDeroule.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeroule.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDeroule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeroule.Location = new System.Drawing.Point(0, 122);
-            this.btnDeroule.Name = "btnDeroule";
-            this.btnDeroule.Size = new System.Drawing.Size(823, 30);
-            this.btnDeroule.TabIndex = 10;
-            this.btnDeroule.Tag = "Close";
-            this.btnDeroule.Text = "▼";
-            this.btnDeroule.UseVisualStyleBackColor = false;
-            this.btnDeroule.Click += new System.EventHandler(this.btnDeroule_Click);
-            // 
-            // rtxtCompteRendu
-            // 
-            this.rtxtCompteRendu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.rtxtCompteRendu.Location = new System.Drawing.Point(10, 267);
-            this.rtxtCompteRendu.MaximumSize = new System.Drawing.Size(800, 150);
-            this.rtxtCompteRendu.MinimumSize = new System.Drawing.Size(800, 150);
-            this.rtxtCompteRendu.Name = "rtxtCompteRendu";
-            this.rtxtCompteRendu.ReadOnly = true;
-            this.rtxtCompteRendu.Size = new System.Drawing.Size(800, 150);
-            this.rtxtCompteRendu.TabIndex = 12;
-            // 
             // uscMissions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,7 +194,7 @@
             this.Controls.Add(this.pboAlert);
             this.DoubleBuffered = true;
             this.Name = "uscMissions";
-            this.Size = new System.Drawing.Size(823, 442);
+            this.Size = new System.Drawing.Size(823, 444);
             this.Load += new System.EventHandler(this.uscMissions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pboAlert)).EndInit();
             this.ResumeLayout(false);

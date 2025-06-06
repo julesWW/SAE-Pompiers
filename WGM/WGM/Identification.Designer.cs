@@ -142,6 +142,8 @@
             this.Controls.Add(this.lblMdp);
             this.Controls.Add(this.txtIdentifiant);
             this.Controls.Add(this.lblIdentifiant);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "frmIdentification";
             this.Text = "Identification";
             this.Load += new System.EventHandler(this.frmIdentification_Load);
