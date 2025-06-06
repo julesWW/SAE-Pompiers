@@ -30,13 +30,13 @@ namespace WGM
 
 
             //affecter des vehicules
-            
+
             dsTemp.Tables.Clear();
             dsTemp.Tables.Add("besoinVehicule");
             dsTemp.Tables["besoinVehicule"].Columns.Add("codeTypeEngin");
             dsTemp.Tables["besoinVehicule"].Columns.Add("nombre");
 
-            foreach(DataRow dr in ds.Tables["Necessiter"].Select("idNatureSinistre = " + idNatureSinistre.ToString()))
+            foreach (DataRow dr in ds.Tables["Necessiter"].Select("idNatureSinistre = " + idNatureSinistre.ToString()))
             {
                 DataRow newRow = dsTemp.Tables["besoinVehicule"].NewRow();
                 newRow["codeTypeEngin"] = dr["codeTypeEngin"];
@@ -58,7 +58,7 @@ namespace WGM
 
                 foreach (DataRow engin in engins)
                 {
-                    if(codeOccu != engin["codeTypeEngin"].ToString())
+                    if (codeOccu != engin["codeTypeEngin"].ToString())
                     {
                         codeOccu = engin["codeTypeEngin"].ToString();
                         nbOcc = Convert.ToInt32(dr2["nombre"]) - 1;
@@ -68,7 +68,7 @@ namespace WGM
                         nRow["numero"] = engin["numero"];
                         dsTemp.Tables["vehiculePossible"].Rows.Add(nRow);
                     }
-                    else if(codeOccu == engin["codeTypeEngin"].ToString() && nbOcc > 0)
+                    else if (codeOccu == engin["codeTypeEngin"].ToString() && nbOcc > 0)
                     {
                         DataRow nRow = dsTemp.Tables["vehiculePossible"].NewRow();
                         nRow["typeEngin"] = engin["codeTypeEngin"];
@@ -103,9 +103,9 @@ namespace WGM
                 string parametrePompier = "enMission = 0 AND enConge = 0";
                 foreach (DataRow pompierDispo in ds.Tables["Pompier"].Select(parametrePompier))
                 {
-                    foreach(DataRow pomHab in ds.Tables["Passer"].Select("matriculePompier = '" + pompierDispo["matricule"].ToString() + "'"))
-                    if (habilitation.Contains(pomHab["idHabilitation"].ToString()))
-                    {
+                    foreach (DataRow pomHab in ds.Tables["Passer"].Select("matriculePompier = '" + pompierDispo["matricule"].ToString() + "'"))
+                        if (habilitation.Contains(pomHab["idHabilitation"].ToString()))
+                        {
                             foreach (DataRow matriculePomp in ds.Tables["Affectation"].Select("matriculePompier = '" + pompierDispo["matricule"].ToString() + "' AND idCaserne = '" + cboCaserne.SelectedValue.ToString() + "'"))
                             {
                                 DataRow nRow = dsTemp.Tables["pompierDisHab"].NewRow();
@@ -114,7 +114,7 @@ namespace WGM
                                 nRow["Choisi"] = 0;
                                 dsTemp.Tables["pompierDisHab"].Rows.Add(nRow);
                             }
-                    }
+                        }
                 }
 
 
@@ -169,7 +169,7 @@ namespace WGM
             bool assezPompier = true;
 
             //Verification du vehicule
-            foreach(DataRow besoin in dsTemp.Tables["besoinVehicule"].Rows)
+            foreach (DataRow besoin in dsTemp.Tables["besoinVehicule"].Rows)
             {
                 string codeType = besoin["codeTypeEngin"].ToString();
                 int nombreRequis = int.Parse(besoin["nombre"].ToString());
@@ -272,7 +272,7 @@ namespace WGM
             MesDatas.DsGlobal.Tables["Mission"].Rows.Add(newMission);
 
             //Remplissage de PartirAvec & Engin
-            foreach(DataRow vehicule in dsTemp.Tables["vehiculePossible"].Rows)
+            foreach (DataRow vehicule in dsTemp.Tables["vehiculePossible"].Rows)
             {
                 DataRow newPartirAvec = MesDatas.DsGlobal.Tables["PartirAvec"].NewRow();
                 newPartirAvec["idCaserne"] = cboCaserne.SelectedValue;
@@ -286,7 +286,7 @@ namespace WGM
                 //Partie Engin
                 string type = vehicule["typeEngin"].ToString();
                 string numero = vehicule["numero"].ToString();
-                string caserne = cboCaserne.SelectedValue.ToString(); 
+                string caserne = cboCaserne.SelectedValue.ToString();
 
                 //Trouver le véhicule correspondant dans dsGlobal 
                 string filtre = "codeTypeEngin = '" + type + "' AND numero = " + numero + " AND idCaserne = " + caserne;
@@ -303,8 +303,8 @@ namespace WGM
                 }
 
             }
-             //Remplissage de Mobiliser
-            foreach(DataRow pompier in dsTemp.Tables["pompierEnvoye"].Rows)
+            //Remplissage de Mobiliser
+            foreach (DataRow pompier in dsTemp.Tables["pompierEnvoye"].Rows)
             {
                 DataRow newMobiliser = MesDatas.DsGlobal.Tables["Mobiliser"].NewRow();
                 newMobiliser["matriculePompier"] = int.Parse(pompier["Matricule"].ToString());
@@ -337,9 +337,9 @@ namespace WGM
             cboSinistre.Items.Clear();
 
             //Défini la sources des valeurs a remplir
-            cboSinistre.DataSource = ds.Tables["NatureSinistre"]; 
+            cboSinistre.DataSource = ds.Tables["NatureSinistre"];
             //Défini le texte
-            cboSinistre.DisplayMember = ds.Tables["NatureSinistre"].Columns[1].ColumnName; 
+            cboSinistre.DisplayMember = ds.Tables["NatureSinistre"].Columns[1].ColumnName;
             //Défini la valeurs associer
             cboSinistre.ValueMember = ds.Tables["NatureSinistre"].Columns[0].ColumnName;
 
@@ -350,11 +350,11 @@ namespace WGM
             cboCaserne.DataSource = ds.Tables["Caserne"];
             cboCaserne.DisplayMember = ds.Tables["Caserne"].Columns[1].ColumnName;
             cboCaserne.ValueMember = ds.Tables["Caserne"].Columns[0].ColumnName;
-            
-            numeroMission = ds.Tables["Mission"].Rows.Count +1;
+
+            numeroMission = ds.Tables["Mission"].Rows.Count + 1;
             lblNoMission.Text += numeroMission.ToString();
-            
-            
+
+
             btnValider.Visible = false;
 
         }
