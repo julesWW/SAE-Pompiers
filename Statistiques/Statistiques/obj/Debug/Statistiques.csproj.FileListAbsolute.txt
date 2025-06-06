@@ -9,3 +9,14 @@ C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statis
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\System.Data.SQLite.dll
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\System.Data.SQLite.xml
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statisti.9465184F.Up2Date
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\Statistiques.dll
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\Statistiques.pdb
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\System.Data.SQLite.dll
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\bin\Debug\System.Data.SQLite.xml
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.csproj.AssemblyReference.cache
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.uscStats.resources
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.csproj.GenerateResource.cache
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.csproj.CoreCompileInputs.cache
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statisti.9465184F.Up2Date
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.dll
+d:\Users\Jules\Documents\SAE\my-awesome-project\Statistiques\Statistiques\obj\Debug\Statistiques.pdb

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\Statistiques\\",
+  "WorkspaceRootPath": "D:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\Statistiques\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23F6AE2E-0398-4C7B-9087-17E903A42DA8}|Statistiques\\Statistiques.csproj|C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\Statistiques\\statistiques\\statistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{23F6AE2E-0398-4C7B-9087-17E903A42DA8}|Statistiques\\Statistiques.csproj|D:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\Statistiques\\statistiques\\statistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{23F6AE2E-0398-4C7B-9087-17E903A42DA8}|Statistiques\\Statistiques.csproj|solutionrelative:statistiques\\statistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23F6AE2E-0398-4C7B-9087-17E903A42DA8}|Statistiques\\Statistiques.csproj|c:\\users\\light\\onedrive\\pictures\\cours windows\\a21\\sae\\my-awesome-project\\statistiques\\statistiques\\statistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{23F6AE2E-0398-4C7B-9087-17E903A42DA8}|Statistiques\\Statistiques.csproj|d:\\users\\jules\\documents\\sae\\my-awesome-project\\statistiques\\statistiques\\statistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23F6AE2E-0398-4C7B-9087-17E903A42DA8}|Statistiques\\Statistiques.csproj|solutionrelative:statistiques\\statistiques.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Statistiques.cs",
-              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs",
+              "DocumentMoniker": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs",
               "RelativeDocumentMoniker": "Statistiques\\Statistiques.cs",
-              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs*",
-              "RelativeToolTip": "Statistiques\\Statistiques.cs*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAcwDsAAAApAAAAAAAAAA==",
+              "ToolTip": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs",
+              "RelativeToolTip": "Statistiques\\Statistiques.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwGYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T15:28:27.491Z",
               "EditorCaption": ""
@@ -37,10 +37,10 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Statistiques.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs",
+              "DocumentMoniker": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs",
               "RelativeDocumentMoniker": "Statistiques\\Statistiques.cs",
-              "ToolTip": "C:\\Users\\Light\\OneDrive\\Pictures\\cours Windows\\A21\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs [Design]*",
-              "RelativeToolTip": "Statistiques\\Statistiques.cs [Design]*",
+              "ToolTip": "d:\\Users\\Jules\\Documents\\SAE\\my-awesome-project\\Statistiques\\Statistiques\\Statistiques.cs [Design]",
+              "RelativeToolTip": "Statistiques\\Statistiques.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T15:08:23.028Z",
               "EditorCaption": " [Design]"
