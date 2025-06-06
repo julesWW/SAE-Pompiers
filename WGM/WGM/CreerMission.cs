@@ -260,13 +260,13 @@ namespace WGM
             DataRow newMission = MesDatas.DsGlobal.Tables["Mission"].NewRow();
             newMission["id"] = numeroMission;
             newMission["dateHeureDepart"] = dateSinistre.ToString();
-            newMission["dateHeureRetour"] = "Null";
+            //newMission["dateHeureRetour"] = "Null";
             newMission["MotifAppel"] = txtMotif.Text;
             newMission["adresse"] = txtRue.Text;
             newMission["cp"] = txtCodePost.Text;
             newMission["ville"] = txtVille.Text;
             newMission["terminee"] = 0;
-            newMission["compteRendu"] = "Null";
+            //newMission["compteRendu"] = "Null";
             newMission["idNatureSinistre"] = cboSinistre.SelectedValue;
             newMission["idCaserne"] = cboCaserne.SelectedValue;
             MesDatas.DsGlobal.Tables["Mission"].Rows.Add(newMission);
@@ -279,7 +279,7 @@ namespace WGM
                 newPartirAvec["codeTypeEngin"] = vehicule["typeEngin"];
                 newPartirAvec["numeroEngin"] = vehicule["numero"];
                 newPartirAvec["idMission"] = numeroMission;
-                newPartirAvec["reparationsEventuelles"] = "Null";
+                //newPartirAvec["reparationsEventuelles"] = "Null";
                 MesDatas.DsGlobal.Tables["PartirAvec"].Rows.Add(newPartirAvec);
 
 
