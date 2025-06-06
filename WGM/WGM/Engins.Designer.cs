@@ -31,10 +31,10 @@ namespace Engins
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.gboChoixCaserne = new System.Windows.Forms.GroupBox();
+            this.grpChoixCaserne = new System.Windows.Forms.GroupBox();
             this.cboChoixCaserne = new System.Windows.Forms.ComboBox();
             this.lblChoixCaserne = new System.Windows.Forms.Label();
-            this.gbo = new System.Windows.Forms.GroupBox();
+            this.grpInfo = new System.Windows.Forms.GroupBox();
             this.cboPanne = new System.Windows.Forms.CheckBox();
             this.cboMission = new System.Windows.Forms.CheckBox();
             this.lblPanne = new System.Windows.Forms.Label();
@@ -51,30 +51,34 @@ namespace Engins
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bsEngin = new System.Windows.Forms.BindingSource(this.components);
             this.lblEngin = new System.Windows.Forms.Label();
-            this.gboChoixCaserne.SuspendLayout();
-            this.gbo.SuspendLayout();
+            this.pnlBoutons = new System.Windows.Forms.Panel();
+            this.grpChoixCaserne.SuspendLayout();
+            this.grpInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboEngin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsEngin)).BeginInit();
+            this.pnlBoutons.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gboChoixCaserne
+            // grpChoixCaserne
             // 
-            this.gboChoixCaserne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
-            this.gboChoixCaserne.Controls.Add(this.cboChoixCaserne);
-            this.gboChoixCaserne.Controls.Add(this.lblChoixCaserne);
-            this.gboChoixCaserne.Location = new System.Drawing.Point(28, 56);
-            this.gboChoixCaserne.Name = "gboChoixCaserne";
-            this.gboChoixCaserne.Size = new System.Drawing.Size(751, 73);
-            this.gboChoixCaserne.TabIndex = 0;
-            this.gboChoixCaserne.TabStop = false;
+            this.grpChoixCaserne.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpChoixCaserne.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.grpChoixCaserne.Controls.Add(this.cboChoixCaserne);
+            this.grpChoixCaserne.Controls.Add(this.lblChoixCaserne);
+            this.grpChoixCaserne.Location = new System.Drawing.Point(28, 56);
+            this.grpChoixCaserne.Name = "grpChoixCaserne";
+            this.grpChoixCaserne.Size = new System.Drawing.Size(823, 73);
+            this.grpChoixCaserne.TabIndex = 0;
+            this.grpChoixCaserne.TabStop = false;
             // 
             // cboChoixCaserne
             // 
             this.cboChoixCaserne.FormattingEnabled = true;
             this.cboChoixCaserne.Location = new System.Drawing.Point(261, 29);
             this.cboChoixCaserne.Name = "cboChoixCaserne";
-            this.cboChoixCaserne.Size = new System.Drawing.Size(479, 24);
+            this.cboChoixCaserne.Size = new System.Drawing.Size(384, 24);
             this.cboChoixCaserne.TabIndex = 1;
             this.cboChoixCaserne.SelectedIndexChanged += new System.EventHandler(this.cboChoixCaserne_SelectedIndexChanged);
             // 
@@ -88,23 +92,26 @@ namespace Engins
             this.lblChoixCaserne.TabIndex = 0;
             this.lblChoixCaserne.Text = "Choix de la caserne";
             // 
-            // gbo
+            // grpInfo
             // 
-            this.gbo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
-            this.gbo.Controls.Add(this.cboPanne);
-            this.gbo.Controls.Add(this.cboMission);
-            this.gbo.Controls.Add(this.lblPanne);
-            this.gbo.Controls.Add(this.lblMission);
-            this.gbo.Controls.Add(this.pboEngin);
-            this.gbo.Controls.Add(this.lblDateReceptVal);
-            this.gbo.Controls.Add(this.lblDateRecept);
-            this.gbo.Controls.Add(this.lblNumVal);
-            this.gbo.Controls.Add(this.lblNum);
-            this.gbo.Location = new System.Drawing.Point(31, 157);
-            this.gbo.Name = "gbo";
-            this.gbo.Size = new System.Drawing.Size(748, 320);
-            this.gbo.TabIndex = 1;
-            this.gbo.TabStop = false;
+            this.grpInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.grpInfo.Controls.Add(this.cboPanne);
+            this.grpInfo.Controls.Add(this.cboMission);
+            this.grpInfo.Controls.Add(this.lblPanne);
+            this.grpInfo.Controls.Add(this.lblMission);
+            this.grpInfo.Controls.Add(this.pboEngin);
+            this.grpInfo.Controls.Add(this.lblDateReceptVal);
+            this.grpInfo.Controls.Add(this.lblDateRecept);
+            this.grpInfo.Controls.Add(this.lblNumVal);
+            this.grpInfo.Controls.Add(this.lblNum);
+            this.grpInfo.Location = new System.Drawing.Point(31, 157);
+            this.grpInfo.Name = "grpInfo";
+            this.grpInfo.Size = new System.Drawing.Size(820, 344);
+            this.grpInfo.TabIndex = 1;
+            this.grpInfo.TabStop = false;
             // 
             // cboPanne
             // 
@@ -148,10 +155,11 @@ namespace Engins
             // 
             // pboEngin
             // 
+            this.pboEngin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pboEngin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pboEngin.Location = new System.Drawing.Point(460, 38);
+            this.pboEngin.Location = new System.Drawing.Point(483, 31);
             this.pboEngin.Name = "pboEngin";
-            this.pboEngin.Size = new System.Drawing.Size(250, 180);
+            this.pboEngin.Size = new System.Drawing.Size(300, 216);
             this.pboEngin.TabIndex = 4;
             this.pboEngin.TabStop = false;
             // 
@@ -198,7 +206,7 @@ namespace Engins
             // btnPreviousPlus
             // 
             this.btnPreviousPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
-            this.btnPreviousPlus.Location = new System.Drawing.Point(214, 492);
+            this.btnPreviousPlus.Location = new System.Drawing.Point(4, 10);
             this.btnPreviousPlus.Name = "btnPreviousPlus";
             this.btnPreviousPlus.Size = new System.Drawing.Size(85, 85);
             this.btnPreviousPlus.TabIndex = 2;
@@ -209,7 +217,7 @@ namespace Engins
             // btnPrevious
             // 
             this.btnPrevious.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
-            this.btnPrevious.Location = new System.Drawing.Point(303, 492);
+            this.btnPrevious.Location = new System.Drawing.Point(93, 10);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(85, 85);
             this.btnPrevious.TabIndex = 3;
@@ -220,7 +228,7 @@ namespace Engins
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
-            this.btnNext.Location = new System.Drawing.Point(394, 492);
+            this.btnNext.Location = new System.Drawing.Point(184, 10);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(85, 85);
             this.btnNext.TabIndex = 4;
@@ -231,7 +239,7 @@ namespace Engins
             // btnNextPlus
             // 
             this.btnNextPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
-            this.btnNextPlus.Location = new System.Drawing.Point(485, 492);
+            this.btnNextPlus.Location = new System.Drawing.Point(275, 10);
             this.btnNextPlus.Name = "btnNextPlus";
             this.btnNextPlus.Size = new System.Drawing.Size(85, 85);
             this.btnNextPlus.TabIndex = 5;
@@ -253,27 +261,40 @@ namespace Engins
             this.lblEngin.TabIndex = 6;
             this.lblEngin.Text = "Gestion des Engins";
             // 
+            // pnlBoutons
+            // 
+            this.pnlBoutons.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pnlBoutons.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBoutons.Controls.Add(this.btnNextPlus);
+            this.pnlBoutons.Controls.Add(this.btnNext);
+            this.pnlBoutons.Controls.Add(this.btnPrevious);
+            this.pnlBoutons.Controls.Add(this.btnPreviousPlus);
+            this.pnlBoutons.Location = new System.Drawing.Point(255, 507);
+            this.pnlBoutons.Name = "pnlBoutons";
+            this.pnlBoutons.Size = new System.Drawing.Size(364, 104);
+            this.pnlBoutons.TabIndex = 7;
+            // 
             // USC_Engins
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
+            this.Controls.Add(this.pnlBoutons);
             this.Controls.Add(this.lblEngin);
-            this.Controls.Add(this.btnNextPlus);
-            this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.btnPrevious);
-            this.Controls.Add(this.btnPreviousPlus);
-            this.Controls.Add(this.gbo);
-            this.Controls.Add(this.gboChoixCaserne);
+            this.Controls.Add(this.grpInfo);
+            this.Controls.Add(this.grpChoixCaserne);
             this.Name = "USC_Engins";
-            this.Size = new System.Drawing.Size(800, 600);
-            this.gboChoixCaserne.ResumeLayout(false);
-            this.gboChoixCaserne.PerformLayout();
-            this.gbo.ResumeLayout(false);
-            this.gbo.PerformLayout();
+            this.Size = new System.Drawing.Size(872, 624);
+            this.Load += new System.EventHandler(this.USC_Engins_Load);
+            this.SizeChanged += new System.EventHandler(this.USC_Engins_SizeChanged);
+            this.grpChoixCaserne.ResumeLayout(false);
+            this.grpChoixCaserne.PerformLayout();
+            this.grpInfo.ResumeLayout(false);
+            this.grpInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboEngin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsEngin)).EndInit();
+            this.pnlBoutons.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,11 +302,11 @@ namespace Engins
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gboChoixCaserne;
+        private System.Windows.Forms.GroupBox grpChoixCaserne;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.ComboBox cboChoixCaserne;
         private System.Windows.Forms.Label lblChoixCaserne;
-        private System.Windows.Forms.GroupBox gbo;
+        private System.Windows.Forms.GroupBox grpInfo;
         private System.Windows.Forms.Label lblNum;
         private System.Windows.Forms.Label lblNumVal;
         private System.Windows.Forms.Label lblDateReceptVal;
@@ -300,5 +321,6 @@ namespace Engins
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnNextPlus;
         private System.Windows.Forms.Label lblEngin;
+        private System.Windows.Forms.Panel pnlBoutons;
     }
 }
