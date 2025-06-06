@@ -103,6 +103,16 @@ namespace WGM.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap appli {
+            get {
+                object obj = ResourceManager.GetObject("appli", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BRS {
             get {
                 object obj = ResourceManager.GetObject("BRS", resourceCulture);
@@ -206,6 +216,16 @@ namespace WGM.Properties {
         internal static System.Drawing.Bitmap FCYN {
             get {
                 object obj = ResourceManager.GetObject("FCYN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fire_exit {
+            get {
+                object obj = ResourceManager.GetObject("fire-exit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

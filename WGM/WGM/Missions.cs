@@ -20,7 +20,8 @@ namespace Mission
 {
     public partial class uscMissions : UserControl
     {
-        int id = 7;
+        int id;
+        bool enCours;
         //  SQLiteConnection connec;
         string mission;
         string[] datesHeures;
@@ -83,12 +84,13 @@ namespace Mission
                         }
                     }
                     //Compte Rendu
-                    lblCompteRendu.Text = r["compteRendu"].ToString();
+                    rtxtCompteRendu.Text = r["compteRendu"].ToString();
 
                     // if pas fini
                     if (Convert.ToInt16(r["terminee"]) == 0)
                     {
-                        lblCompteRendu.Visible = false;
+                        enCours = true;
+                        rtxtCompteRendu.Visible = false;
                         lblFin.Visible = false;
                         //Image
                         var rm = WGM.Properties.Resources.ResourceManager;
@@ -96,8 +98,9 @@ namespace Mission
                     }
                     else
                     {
+                        enCours=false;
                         btnCloture.Enabled = false;
-                        lblCompteRendu.Visible = true;
+                        rtxtCompteRendu.Visible = true;
                         lblFin.Visible = true;
                         //Image
                         var rm = WGM.Properties.Resources.ResourceManager;
@@ -112,6 +115,7 @@ namespace Mission
                     }
                 }
             }
+            BonneTaille();
         }
         private void btnCloture_Click(object sender, EventArgs e)
         {
@@ -119,6 +123,7 @@ namespace Mission
             if (frmCR.ShowDialog() == DialogResult.OK)
             {
                 uscMissions_Load(sender, e);
+                btnPDF_Click(sender, e);
             }
         }
 
@@ -172,10 +177,16 @@ namespace Mission
                         col.Item().Text("Type de sinistre : " + lblCategorie.Text).Bold();
 
                         col.Item().Text("Motif : " + mission);
+                        
+                        foreach(DataRow r in dtMission.Rows)
+                        {
+                            if (Convert.ToInt16(r["id"]) == id)
+                            {
+                                col.Item().Text("Adresse : " + r["adresse"].ToString()+" "+ r["cp"].ToString()+" "+ r["ville"].ToString());
+                            }
+                        }
 
-                        col.Item().Text("Adresse : Quai des pêcheurs 67000 Strasbourg");
-
-                        col.Item().Text("Compte-rendu : " + lblCompteRendu.Text);
+                        col.Item().Text("Compte-rendu : " + rtxtCompteRendu.Text);
 
                         col.Item().Text("--------------------------------------------------------------------------------");
 
@@ -247,6 +258,40 @@ namespace Mission
                 });
             }).GeneratePdf(@".\..\..\..\..\RapportsDeMissions\Rapport_Mission_"+ id+@".pdf");
 
+        }
+
+        private void BonneTaille()
+        {
+            if (btnDeroule.Tag.ToString() == "Close")
+            {
+                this.Height = 151;
+            }
+            else
+            {
+                if (enCours)
+                {
+                    this.Height = 268;
+                }
+                else
+                {
+                    this.Height = 380;
+                }
+            }
+        }
+        private void btnDeroule_Click(object sender, EventArgs e)
+        {
+            if (btnDeroule.Tag.ToString() == "Open")
+            {
+                btnDeroule.Tag = "Close";
+                btnDeroule.Text = "▼";
+                BonneTaille();
+            }
+            else
+            {
+                btnDeroule.Tag = "Open";
+                btnDeroule.Text = "▲";
+                BonneTaille();
+            }
         }
     }
 }
