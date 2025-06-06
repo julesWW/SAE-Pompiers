@@ -106,8 +106,17 @@
     <Compile Include="Personnel.Designer.cs">
       <DependentUpon>Personnel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reparation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reparation.Designer.cs">
+      <DependentUpon>Reparation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base.resx">
       <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cloture.resx">
+      <DependentUpon>Cloture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreerMission.resx">
       <DependentUpon>CreerMission.cs</DependentUpon>
@@ -117,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Engins.resx">
       <DependentUpon>Engins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Identification.resx">
+      <DependentUpon>Identification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Missions.resx">
+      <DependentUpon>Missions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

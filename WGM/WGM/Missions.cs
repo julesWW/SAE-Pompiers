@@ -269,17 +269,17 @@ namespace Mission
         {
             if (btnDeroule.Tag.ToString() == "Close")
             {
-                this.Height = 151;
+                this.Height = 123;
             }
             else
             {
                 if (enCours)
                 {
-                    this.Height = 268;
+                    this.Height = 240;
                 }
                 else
                 {
-                    this.Height = 380;
+                    this.Height = 350;
                 }
             }
         }
