@@ -108,36 +108,8 @@ namespace Engins
             MaJ(null, null);
         }
 
-        private void USC_Engins_SizeChanged(object sender, EventArgs e)
-        {
-            if (this.Width > pnlBoutons.Width)
-            {
-                pnlBoutons.Left = (this.Width - pnlBoutons.Width) / 2;
-            }
-            if (this.Width > lblEngin.Width)
-            {
-                lblEngin.Left = (int)((this.Width - lblEngin.Width) / 2.0);
-            }
-            lblChoixCaserne.Left = (int)((grpChoixCaserne.Width - lblChoixCaserne.Width-cboChoixCaserne.Width-50) / 2.0);
-            cboChoixCaserne.Left = lblChoixCaserne.Right+50;
 
 
-            if ((grpInfo.Width / 2.7333333) / 1.3888888888 < grpInfo.Height / 1.5)
-            {
-                pboEngin.Width = (int)(grpInfo.Width / 2.7333333);
-                pboEngin.Height = (int)(pboEngin.Width / 1.388888888);
-            }
-            else
-            {
-                pboEngin.Height = (int)(grpInfo.Height/1.592592592592);
-                pboEngin.Width = (int)(pboEngin.Height * 1.38888888888);
-            }
-            pboEngin.Left = grpInfo.Width-pboEngin.Width-20;
-        }
 
-        private void USC_Engins_Load(object sender, EventArgs e)
-        {
-            USC_Engins_SizeChanged(sender,e);
-        }
     }
 }

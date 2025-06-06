@@ -130,11 +130,8 @@
   <data name="Alert" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AlertOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AlertOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fire-exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fire-exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="COL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\COL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BRS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BRS.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,12 +142,6 @@
   <data name="fondAppliPompier" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondAppliPompier.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="firetruck" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\firetruck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FireManThumbsUpOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FireManThumbsUpOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="FireManThumbsUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FireManThumbsUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,14 +151,14 @@
   <data name="SAP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SAP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="COL" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\COL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AlertOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlertOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CPL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CPL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,9 +169,6 @@
   <data name="VID" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VID.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="firefighter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\firefighter2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CDT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CDT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,14 +178,11 @@
   <data name="ADJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ADJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tasks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tasks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CCH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CCH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LCL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LCL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CCH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CCH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fondAppliPompierV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fondAppliPompierV2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +190,8 @@
   <data name="FCYN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FCYN.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="statistical" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\statistical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FireManThumbsUpOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FireManThumbsUpOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="downloadPDF" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\downloadPDF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,7 +214,16 @@
   <data name="VSS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\VSS.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appli" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="firefighter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firefighter2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="firetruck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firetruck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tasks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tasks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
