@@ -90,6 +90,8 @@ namespace WGM
             dsTemp.Tables.Add("pompierEnvoye");
             dsTemp.Tables["pompierEnvoye"].Columns.Add("Matricule");
             dsTemp.Tables["pompierEnvoye"].Columns.Add("Habilitation");
+            dsTemp.Tables["pompierEnvoye"].Columns.Add("Nom");
+            dsTemp.Tables["pompierEnvoye"].Columns.Add("Prenom");
 
             List<string> pompierChoisi = new List<string>();
 
@@ -136,10 +138,13 @@ namespace WGM
 
                             if (!pompierChoisi.Contains(matricule))
                             {
+                                DataRow[] nomPompier = MesDatas.DsGlobal.Tables["Pompier"].Select("matricule =" + matricule.ToString());
                                 //Ajout dans pompierEnvoye
                                 DataRow newPompier = dsTemp.Tables["pompierEnvoye"].NewRow();
                                 newPompier["Matricule"] = matricule;
                                 newPompier["Habilitation"] = pompier["Habilitation"];
+                                newPompier["Nom"] = nomPompier[0]["nom"];
+                                newPompier["Prenom"] = nomPompier[0]["prenom"];
                                 dsTemp.Tables["pompierEnvoye"].Rows.Add(newPompier);
 
                                 //Marquer comme choisi dans pompierDisHab
@@ -207,19 +212,7 @@ namespace WGM
 
             if (assezVehicule && assezPompier)
             {
-                //Création du BindingSource engins
-                BindingSource bs1 = new BindingSource();
-                bs1.DataSource = dsTemp.Tables["vehiculePossible"];
-
-                //Liaison à la DataGridView
-                dgvEnginsMobil.DataSource = bs1;
-
-                //BindingSource pompier
-                BindingSource bs2 = new BindingSource();
-                bs2.DataSource = dsTemp.Tables["pompierEnvoye"];
-
-                //Liaison à la DataGridView
-                dgvPompierMobil.DataSource = bs2;
+                remplirlistbox();
 
                 //Affichage du groupe
                 grpMobilisation.Visible = true;
@@ -362,6 +355,25 @@ namespace WGM
         private void cboSinistre_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnValider.Visible = false;
+        }
+
+        public void remplirlistbox()
+        {
+            lstEngins.Items.Clear();
+            foreach (DataRow vehicule in dsTemp.Tables["vehiculePossible"].Rows)
+            {
+                string affichage = vehicule["typeEngin"] + " - n°" + vehicule["numero"];
+                lstEngins.Items.Add(affichage);
+            }
+
+
+            lstPompier.Items.Clear();
+            foreach (DataRow pompier in dsTemp.Tables["pompierEnvoye"].Rows)
+            {
+                DataRow[] libHab = MesDatas.DsGlobal.Tables["Habilitation"].Select("id = " + pompier["Habilitation"]);
+                string affichage = "Matricule : " + pompier["Matricule"] + " -> " + pompier["Nom"] + " " + pompier["Prenom"] + " (" + libHab[0]["libelle"] + ")";
+                lstPompier.Items.Add(affichage);
+            }
         }
         // Si tu vois ça tu as perdu au jeu
     }
