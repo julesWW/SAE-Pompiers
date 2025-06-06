@@ -1,4 +1,0 @@
-Updated native dependencies:
-- Skia updated to version m137
-- Qpdf updated to version 12.2.0
-- OpenSSL updated to version 3.5.0
