@@ -170,7 +170,14 @@ namespace Mission
 
 
                         col.Item().Text("Déclenchée le " + dates[1] + "-" + dates[2] + "-" + dates[0] + " à " + datesHeures[1]);
-                        col.Item().Text("Retour le " + lblFin.Text.Replace("Fin le ", ""));
+                        if (enCours)
+                        {
+                            col.Item().Text("Mission toujours en cours");
+                        }
+                        else
+                        {
+                            col.Item().Text("Retour le " + lblFin.Text.Replace("Fin le ", ""));
+                        }
 
                         col.Item().Text("--------------------------------------------------------------------------------");
 
@@ -186,7 +193,14 @@ namespace Mission
                             }
                         }
 
-                        col.Item().Text("Compte-rendu : " + rtxtCompteRendu.Text);
+                        if (enCours)
+                        {
+                            col.Item().Text("Le compte rendu n'a pas encore été saisi car la mission est toujours en cours.");
+                        }
+                        else
+                        {
+                            col.Item().Text("Compte-rendu : " + rtxtCompteRendu.Text);
+                        }
 
                         col.Item().Text("--------------------------------------------------------------------------------");
 
