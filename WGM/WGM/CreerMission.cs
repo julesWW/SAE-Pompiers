@@ -19,7 +19,10 @@ namespace WGM
         }
         //--------Variable globale du form---------------------------------
         DataSet ds = MesDatas.DsGlobal;
-        string dateSinistre = DateTime.Now.ToString();
+        string dateSinistre = DateTime.Now.ToString("yyyy-MM-dd HH:mm");
+        string dateSinistre2 = DateTime.Now.ToString("yyyy/MM/dd HH:mm");
+        DataSet dsTemp = new DataSet();
+        int numeroMission = -1;
         //-----------------------------------------------------------------
         private void btnConsult_Click(object sender, EventArgs e)
         {
@@ -27,13 +30,13 @@ namespace WGM
 
 
             //affecter des vehicules
-            DataSet dsTemp = new DataSet();
+
             dsTemp.Tables.Clear();
             dsTemp.Tables.Add("besoinVehicule");
             dsTemp.Tables["besoinVehicule"].Columns.Add("codeTypeEngin");
             dsTemp.Tables["besoinVehicule"].Columns.Add("nombre");
 
-            foreach(DataRow dr in ds.Tables["Necessiter"].Select("idNatureSinistre = " + idNatureSinistre.ToString()))
+            foreach (DataRow dr in ds.Tables["Necessiter"].Select("idNatureSinistre = " + idNatureSinistre.ToString()))
             {
                 DataRow newRow = dsTemp.Tables["besoinVehicule"].NewRow();
                 newRow["codeTypeEngin"] = dr["codeTypeEngin"];
@@ -55,7 +58,7 @@ namespace WGM
 
                 foreach (DataRow engin in engins)
                 {
-                    if(codeOccu != engin["codeTypeEngin"].ToString())
+                    if (codeOccu != engin["codeTypeEngin"].ToString())
                     {
                         codeOccu = engin["codeTypeEngin"].ToString();
                         nbOcc = Convert.ToInt32(dr2["nombre"]) - 1;
@@ -65,7 +68,7 @@ namespace WGM
                         nRow["numero"] = engin["numero"];
                         dsTemp.Tables["vehiculePossible"].Rows.Add(nRow);
                     }
-                    else if(codeOccu == engin["codeTypeEngin"].ToString() && nbOcc > 0)
+                    else if (codeOccu == engin["codeTypeEngin"].ToString() && nbOcc > 0)
                     {
                         DataRow nRow = dsTemp.Tables["vehiculePossible"].NewRow();
                         nRow["typeEngin"] = engin["codeTypeEngin"];
@@ -87,6 +90,8 @@ namespace WGM
             dsTemp.Tables.Add("pompierEnvoye");
             dsTemp.Tables["pompierEnvoye"].Columns.Add("Matricule");
             dsTemp.Tables["pompierEnvoye"].Columns.Add("Habilitation");
+            dsTemp.Tables["pompierEnvoye"].Columns.Add("Nom");
+            dsTemp.Tables["pompierEnvoye"].Columns.Add("Prenom");
 
             List<string> pompierChoisi = new List<string>();
 
@@ -100,9 +105,9 @@ namespace WGM
                 string parametrePompier = "enMission = 0 AND enConge = 0";
                 foreach (DataRow pompierDispo in ds.Tables["Pompier"].Select(parametrePompier))
                 {
-                    foreach(DataRow pomHab in ds.Tables["Passer"].Select("matriculePompier = '" + pompierDispo["matricule"].ToString() + "'"))
-                    if (habilitation.Contains(pomHab["idHabilitation"].ToString()))
-                    {
+                    foreach (DataRow pomHab in ds.Tables["Passer"].Select("matriculePompier = '" + pompierDispo["matricule"].ToString() + "'"))
+                        if (habilitation.Contains(pomHab["idHabilitation"].ToString()))
+                        {
                             foreach (DataRow matriculePomp in ds.Tables["Affectation"].Select("matriculePompier = '" + pompierDispo["matricule"].ToString() + "' AND idCaserne = '" + cboCaserne.SelectedValue.ToString() + "'"))
                             {
                                 DataRow nRow = dsTemp.Tables["pompierDisHab"].NewRow();
@@ -111,7 +116,7 @@ namespace WGM
                                 nRow["Choisi"] = 0;
                                 dsTemp.Tables["pompierDisHab"].Rows.Add(nRow);
                             }
-                    }
+                        }
                 }
 
 
@@ -133,10 +138,13 @@ namespace WGM
 
                             if (!pompierChoisi.Contains(matricule))
                             {
+                                DataRow[] nomPompier = MesDatas.DsGlobal.Tables["Pompier"].Select("matricule =" + matricule.ToString());
                                 //Ajout dans pompierEnvoye
                                 DataRow newPompier = dsTemp.Tables["pompierEnvoye"].NewRow();
                                 newPompier["Matricule"] = matricule;
                                 newPompier["Habilitation"] = pompier["Habilitation"];
+                                newPompier["Nom"] = nomPompier[0]["nom"];
+                                newPompier["Prenom"] = nomPompier[0]["prenom"];
                                 dsTemp.Tables["pompierEnvoye"].Rows.Add(newPompier);
 
                                 //Marquer comme choisi dans pompierDisHab
@@ -162,24 +170,75 @@ namespace WGM
 
             }
 
-            //Création du BindingSource engins
-            BindingSource bs1 = new BindingSource();
-            bs1.DataSource = dsTemp.Tables["vehiculePossible"];
+            bool assezVehicule = true;
+            bool assezPompier = true;
 
-            //Liaison à la DataGridView
-            dgvEnginsMobil.DataSource = bs1;
+            //Verification du vehicule
+            foreach (DataRow besoin in dsTemp.Tables["besoinVehicule"].Rows)
+            {
+                string codeType = besoin["codeTypeEngin"].ToString();
+                int nombreRequis = int.Parse(besoin["nombre"].ToString());
 
-            //BindingSource pompier
-            BindingSource bs2 = new BindingSource();
-            bs2.DataSource = dsTemp.Tables["pompierEnvoye"];
+                int nbDispo = dsTemp.Tables["vehiculePossible"].Select("typeEngin = '" + codeType + "'").Length;
 
-            //Liaison à la DataGridView
-            dgvPompierMobil.DataSource = bs2;
+                if (nbDispo < nombreRequis)
+                {
+                    assezVehicule = false;
+                    break;
+                }
+            }
 
-            //Affichage du groupe
-            grpMobilisation.Visible = true;
+            //Verification pompier
+            foreach (DataRow besoin in ds.Tables["Embarquer"].Rows)
+            {
+                string codeType = besoin["codeTypeEngin"].ToString();
+                string hab = besoin["idHabilitation"].ToString();
+                int nombre = int.Parse(besoin["nombre"].ToString());
 
-            btnValider.Enabled = true;
+                //Compter combien de véhicules de ce type ont été affectés
+                int nbVehicules = dsTemp.Tables["vehiculePossible"].Select("typeEngin = '" + codeType + "'").Length;
+
+                int nbRequis = nbVehicules * nombre;
+
+                //Compter combien de pompiers de cette habilitation ont été envoyés
+                int nbPresents = dsTemp.Tables["pompierEnvoye"].Select("Habilitation = '" + hab + "'").Length;
+
+                if (nbPresents < nbRequis)
+                {
+                    assezPompier = false;
+                    break;
+                }
+            }
+
+            if (assezVehicule && assezPompier)
+            {
+                remplirlistbox();
+
+                //Affichage du groupe
+                grpMobilisation.Visible = true;
+
+                btnValider.Visible = true;
+            }
+            else
+            {
+                btnValider.Visible = false;
+                string msg = "Impossible de lancer la mission :\n";
+
+                if (!assezVehicule)
+                {
+                    msg += "- Nombre de véhicules insuffisant\n";
+                }
+
+                if (!assezPompier)
+                {
+                    msg += "- Nombre de pompiers habilités insuffisant\n";
+                }
+
+                msg += "Veuillez essayer une autre caserne si possible";
+
+                MessageBox.Show(msg, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
 
         private void btnFermer_Click(object sender, EventArgs e)
@@ -189,20 +248,91 @@ namespace WGM
 
         private void btnValider_Click(object sender, EventArgs e)
         {
+
+            //Remplissage de la mission
+            DataRow newMission = MesDatas.DsGlobal.Tables["Mission"].NewRow();
+            newMission["id"] = numeroMission;
+            newMission["dateHeureDepart"] = dateSinistre.ToString();
+            //newMission["dateHeureRetour"] = "Null";
+            newMission["MotifAppel"] = txtMotif.Text;
+            newMission["adresse"] = txtRue.Text;
+            newMission["cp"] = txtCodePost.Text;
+            newMission["ville"] = txtVille.Text;
+            newMission["terminee"] = 0;
+            //newMission["compteRendu"] = "Null";
+            newMission["idNatureSinistre"] = cboSinistre.SelectedValue;
+            newMission["idCaserne"] = cboCaserne.SelectedValue;
+            MesDatas.DsGlobal.Tables["Mission"].Rows.Add(newMission);
+
+            //Remplissage de PartirAvec & Engin
+            foreach (DataRow vehicule in dsTemp.Tables["vehiculePossible"].Rows)
+            {
+                DataRow newPartirAvec = MesDatas.DsGlobal.Tables["PartirAvec"].NewRow();
+                newPartirAvec["idCaserne"] = cboCaserne.SelectedValue;
+                newPartirAvec["codeTypeEngin"] = vehicule["typeEngin"];
+                newPartirAvec["numeroEngin"] = vehicule["numero"];
+                newPartirAvec["idMission"] = numeroMission;
+                //newPartirAvec["reparationsEventuelles"] = "Null";
+                MesDatas.DsGlobal.Tables["PartirAvec"].Rows.Add(newPartirAvec);
+
+
+                //Partie Engin
+                string type = vehicule["typeEngin"].ToString();
+                string numero = vehicule["numero"].ToString();
+                string caserne = cboCaserne.SelectedValue.ToString();
+
+                //Trouver le véhicule correspondant dans dsGlobal 
+                string filtre = "codeTypeEngin = '" + type + "' AND numero = " + numero + " AND idCaserne = " + caserne;
+
+                DataRow[] ligneVehicule = MesDatas.DsGlobal.Tables["Engin"].Select(filtre);
+
+                if (ligneVehicule.Length > 0)
+                {
+                    ligneVehicule[0]["enMission"] = 1;
+                }
+                else
+                {
+                    MessageBox.Show("Véhicule non trouvé dans dsGlobal : " + filtre);
+                }
+
+            }
+            //Remplissage de Mobiliser
+            foreach (DataRow pompier in dsTemp.Tables["pompierEnvoye"].Rows)
+            {
+                DataRow newMobiliser = MesDatas.DsGlobal.Tables["Mobiliser"].NewRow();
+                newMobiliser["matriculePompier"] = int.Parse(pompier["Matricule"].ToString());
+                newMobiliser["idMission"] = numeroMission;
+                newMobiliser["idHabilitation"] = int.Parse(pompier["Habilitation"].ToString());
+                MesDatas.DsGlobal.Tables["Mobiliser"].Rows.Add(newMobiliser);
+
+                int matricule = int.Parse(pompier["Matricule"].ToString());
+
+                string filtre = "matricule = '" + matricule + "'";
+                DataRow[] lignePompier = MesDatas.DsGlobal.Tables["Pompier"].Select(filtre);
+                if (lignePompier.Length > 0)
+                {
+                    lignePompier[0]["enMission"] = 1;
+                }
+                else
+                {
+                    MessageBox.Show("Pompier non trouvé dans dsGlobal : " + filtre);
+                }
+            }
+
             DialogResult = DialogResult.OK;
         }
 
         private void frmNouvMission_Load(object sender, EventArgs e)
         {
-            lblDate.Text += dateSinistre;
+            lblDate.Text += dateSinistre2;
 
             //Remplissage de la cbo des sinistre
             cboSinistre.Items.Clear();
 
             //Défini la sources des valeurs a remplir
-            cboSinistre.DataSource = ds.Tables["NatureSinistre"]; 
+            cboSinistre.DataSource = ds.Tables["NatureSinistre"];
             //Défini le texte
-            cboSinistre.DisplayMember = ds.Tables["NatureSinistre"].Columns[1].ColumnName; 
+            cboSinistre.DisplayMember = ds.Tables["NatureSinistre"].Columns[1].ColumnName;
             //Défini la valeurs associer
             cboSinistre.ValueMember = ds.Tables["NatureSinistre"].Columns[0].ColumnName;
 
@@ -213,15 +343,37 @@ namespace WGM
             cboCaserne.DataSource = ds.Tables["Caserne"];
             cboCaserne.DisplayMember = ds.Tables["Caserne"].Columns[1].ColumnName;
             cboCaserne.ValueMember = ds.Tables["Caserne"].Columns[0].ColumnName;
-            
-            int numeroMission = ds.Tables["Mission"].Rows.Count +1;
+
+            numeroMission = ds.Tables["Mission"].Rows.Count + 1;
             lblNoMission.Text += numeroMission.ToString();
+
+
+            btnValider.Visible = false;
+
         }
 
         private void cboSinistre_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnValider.Enabled = false;
-            btnValider.BackColor = Color.LightBlue;
+            btnValider.Visible = false;
+        }
+
+        public void remplirlistbox()
+        {
+            lstEngins.Items.Clear();
+            foreach (DataRow vehicule in dsTemp.Tables["vehiculePossible"].Rows)
+            {
+                string affichage = vehicule["typeEngin"] + " - n°" + vehicule["numero"];
+                lstEngins.Items.Add(affichage);
+            }
+
+
+            lstPompier.Items.Clear();
+            foreach (DataRow pompier in dsTemp.Tables["pompierEnvoye"].Rows)
+            {
+                DataRow[] libHab = MesDatas.DsGlobal.Tables["Habilitation"].Select("id = " + pompier["Habilitation"]);
+                string affichage = "Matricule : " + pompier["Matricule"] + " -> " + pompier["Nom"] + " " + pompier["Prenom"] + " (" + libHab[0]["libelle"] + ")";
+                lstPompier.Items.Add(affichage);
+            }
         }
         // Si tu vois ça tu as perdu au jeu
     }
