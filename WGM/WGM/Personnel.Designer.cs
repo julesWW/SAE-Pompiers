@@ -62,13 +62,13 @@
             this.lblCaserneModif = new System.Windows.Forms.Label();
             this.cboCaserneModif = new System.Windows.Forms.ComboBox();
             this.btnPlus = new System.Windows.Forms.Button();
-            this.pboGrade = new System.Windows.Forms.PictureBox();
             this.pnlTitre = new System.Windows.Forms.Panel();
+            this.pboGrade = new System.Windows.Forms.PictureBox();
             this.grpGeneral.SuspendLayout();
             this.grpCarriere.SuspendLayout();
             this.grpPlus.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).BeginInit();
             this.pnlTitre.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPersonnel
@@ -271,7 +271,7 @@
             this.rdbVolontaire.AutoSize = true;
             this.rdbVolontaire.Enabled = false;
             this.rdbVolontaire.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbVolontaire.Location = new System.Drawing.Point(620, 70);
+            this.rdbVolontaire.Location = new System.Drawing.Point(636, 70);
             this.rdbVolontaire.Name = "rdbVolontaire";
             this.rdbVolontaire.Size = new System.Drawing.Size(105, 24);
             this.rdbVolontaire.TabIndex = 5;
@@ -459,16 +459,6 @@
             this.btnPlus.UseVisualStyleBackColor = true;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
-            // pboGrade
-            // 
-            this.pboGrade.BackgroundImage = global::WGM.Properties.Resources.SGT;
-            this.pboGrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pboGrade.Location = new System.Drawing.Point(303, 32);
-            this.pboGrade.Name = "pboGrade";
-            this.pboGrade.Size = new System.Drawing.Size(100, 100);
-            this.pboGrade.TabIndex = 9;
-            this.pboGrade.TabStop = false;
-            // 
             // pnlTitre
             // 
             this.pnlTitre.Controls.Add(this.cboPompier);
@@ -480,6 +470,16 @@
             this.pnlTitre.Name = "pnlTitre";
             this.pnlTitre.Size = new System.Drawing.Size(667, 97);
             this.pnlTitre.TabIndex = 18;
+            // 
+            // pboGrade
+            // 
+            this.pboGrade.BackgroundImage = global::WGM.Properties.Resources.SGT;
+            this.pboGrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pboGrade.Location = new System.Drawing.Point(303, 32);
+            this.pboGrade.Name = "pboGrade";
+            this.pboGrade.Size = new System.Drawing.Size(100, 100);
+            this.pboGrade.TabIndex = 9;
+            this.pboGrade.TabStop = false;
             // 
             // uscPersonnel
             // 
@@ -500,9 +500,9 @@
             this.grpCarriere.PerformLayout();
             this.grpPlus.ResumeLayout(false);
             this.grpPlus.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).EndInit();
             this.pnlTitre.ResumeLayout(false);
             this.pnlTitre.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboGrade)).EndInit();
             this.ResumeLayout(false);
 
         }

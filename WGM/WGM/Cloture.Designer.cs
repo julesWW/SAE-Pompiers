@@ -134,7 +134,7 @@
             this.flpReparations.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpReparations.Location = new System.Drawing.Point(13, 164);
             this.flpReparations.Name = "flpReparations";
-            this.flpReparations.Size = new System.Drawing.Size(526, 11);
+            this.flpReparations.Size = new System.Drawing.Size(526, 13);
             this.flpReparations.TabIndex = 9;
             this.flpReparations.WrapContents = false;
             // 

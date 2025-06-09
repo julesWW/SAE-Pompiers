@@ -133,6 +133,9 @@
     <EmbeddedResource Include="Missions.resx">
       <DependentUpon>Missions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Personnel.resx">
+      <DependentUpon>Personnel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

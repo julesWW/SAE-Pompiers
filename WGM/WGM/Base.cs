@@ -96,6 +96,20 @@ namespace WGM
             {
                 btnPersonnel.BackColor = Color.FromArgb(239, 213, 149);
             }
+
+
+            /* page Statistiques
+            if (Page == 3)
+            {
+                btnStatistiques.BackColor = Color.FromArgb(239, 180, 149);
+                uscStats st = new uscStats();
+                st.Dock = DockStyle.Fill;
+                pnlPage.Controls.Add(st);
+            }
+            else
+            {
+                btnStatistiques.BackColor = Color.FromArgb(239, 213, 149);
+            }*/
         }
 
         private void btnTableauDeBord_Click(object sender, EventArgs e)
@@ -121,6 +135,15 @@ namespace WGM
             if (Page != 2)
             {
                 Page = 2;
+                changePage();
+            }
+        }
+
+        private void btnStatistiques_Click(object sender, EventArgs e)
+        {
+            if (Page != 3)
+            {
+                Page = 3;
                 changePage();
             }
         }

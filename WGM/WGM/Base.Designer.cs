@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBase));
             this.btnQuitter = new System.Windows.Forms.Button();
             this.grbMenu = new System.Windows.Forms.GroupBox();
             this.flpOnglets = new System.Windows.Forms.FlowLayoutPanel();
@@ -252,6 +251,7 @@
             this.btnStatistiques.TabIndex = 3;
             this.btnStatistiques.Text = "Statistique";
             this.btnStatistiques.UseVisualStyleBackColor = false;
+            this.btnStatistiques.Click += new System.EventHandler(this.btnStatistiques_Click);
             // 
             // pnlPage
             // 
@@ -274,7 +274,6 @@
             this.ClientSize = new System.Drawing.Size(1094, 637);
             this.Controls.Add(this.pnlPage);
             this.Controls.Add(this.grbMenu);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBase";
             this.Text = "Combattant du feu";
             this.Load += new System.EventHandler(this.Form1_Load);

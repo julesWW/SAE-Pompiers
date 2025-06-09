@@ -50,6 +50,7 @@
             // btnNouvelle
             // 
             this.btnNouvelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
+            this.btnNouvelle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNouvelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNouvelle.Location = new System.Drawing.Point(578, 8);
             this.btnNouvelle.Name = "btnNouvelle";

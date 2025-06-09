@@ -206,6 +206,7 @@ namespace Engins
             // btnPreviousPlus
             // 
             this.btnPreviousPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
+            this.btnPreviousPlus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPreviousPlus.Location = new System.Drawing.Point(4, 10);
             this.btnPreviousPlus.Name = "btnPreviousPlus";
             this.btnPreviousPlus.Size = new System.Drawing.Size(85, 85);
@@ -217,6 +218,7 @@ namespace Engins
             // btnPrevious
             // 
             this.btnPrevious.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
+            this.btnPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrevious.Location = new System.Drawing.Point(93, 10);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(85, 85);
@@ -228,6 +230,7 @@ namespace Engins
             // btnNext
             // 
             this.btnNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
+            this.btnNext.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNext.Location = new System.Drawing.Point(184, 10);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(85, 85);
@@ -239,6 +242,7 @@ namespace Engins
             // btnNextPlus
             // 
             this.btnNextPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(213)))), ((int)(((byte)(149)))));
+            this.btnNextPlus.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNextPlus.Location = new System.Drawing.Point(275, 10);
             this.btnNextPlus.Name = "btnNextPlus";
             this.btnNextPlus.Size = new System.Drawing.Size(85, 85);

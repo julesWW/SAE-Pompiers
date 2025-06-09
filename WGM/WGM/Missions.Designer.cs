@@ -147,6 +147,7 @@
             // 
             this.btnPDF.BackgroundImage = global::WGM.Properties.Resources.downloadPDF;
             this.btnPDF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPDF.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPDF.Location = new System.Drawing.Point(760, 61);
             this.btnPDF.Name = "btnPDF";
             this.btnPDF.Size = new System.Drawing.Size(60, 60);
@@ -158,6 +159,7 @@
             // 
             this.btnCloture.BackgroundImage = global::WGM.Properties.Resources.FireManThumbsUp;
             this.btnCloture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCloture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCloture.Location = new System.Drawing.Point(760, 1);
             this.btnCloture.Name = "btnCloture";
             this.btnCloture.Size = new System.Drawing.Size(60, 60);

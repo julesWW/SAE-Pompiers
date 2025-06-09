@@ -185,7 +185,7 @@ namespace Personnel
                     string[] datesN =dr["dateNaissance"].ToString().Split('-');
                     lblNaissance.Text = ("Date de naissance : " + datesN[1] + "/" + datesN[2] + "/" + datesN[0]);
                     string[] datesE = dr["dateEmbauche"].ToString().Split('-');
-                    lblEmbauche.Text = ("Date de naissance : " + datesE[1] + "/" + datesE[2] + "/" + datesE[0]);
+                    lblEmbauche.Text = ("Date d'embauche : " + datesE[1] + "/" + datesE[2] + "/" + datesE[0]);
 
 
                     cboGrade.SelectedValue = dr["codeGrade"];
@@ -273,7 +273,12 @@ namespace Personnel
                 }
                 catch
                 {
-                    MessageBox.Show("La caserne ne peut pas être changé 2 fois le même jour");
+                    MessageBox.Show("La caserne ne peut pas être changé 2 fois le même jour","Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // annulation de la transaction
+                    transac.Rollback();
+                    MessageBox.Show("Transaction annulée !\n");
+                    cboPompier_SelectedIndexChanged(sender, e);
+                    return;
                 }
 
 

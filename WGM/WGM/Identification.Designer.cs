@@ -82,6 +82,7 @@
             // btnConnect
             // 
             this.btnConnect.BackColor = System.Drawing.Color.Honeydew;
+            this.btnConnect.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConnect.Location = new System.Drawing.Point(235, 159);
             this.btnConnect.Name = "btnConnect";
@@ -93,6 +94,7 @@
             // 
             // btnVoir
             // 
+            this.btnVoir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoir.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnVoir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoir.Location = new System.Drawing.Point(475, 87);
@@ -107,6 +109,7 @@
             // btnAnnuler
             // 
             this.btnAnnuler.BackColor = System.Drawing.Color.MistyRose;
+            this.btnAnnuler.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnnuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnnuler.Location = new System.Drawing.Point(385, 159);
             this.btnAnnuler.Name = "btnAnnuler";
