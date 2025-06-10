@@ -12,6 +12,7 @@ using Pinpon;
 using dashBoard;
 using Engins;
 using Personnel;
+using Statistiques;
 
 namespace WGM
 {
@@ -98,7 +99,6 @@ namespace WGM
             }
 
 
-            /* page Statistiques
             if (Page == 3)
             {
                 btnStatistiques.BackColor = Color.FromArgb(239, 180, 149);
@@ -109,7 +109,7 @@ namespace WGM
             else
             {
                 btnStatistiques.BackColor = Color.FromArgb(239, 213, 149);
-            }*/
+            }
         }
 
         private void btnTableauDeBord_Click(object sender, EventArgs e)

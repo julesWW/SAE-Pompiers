@@ -112,6 +112,12 @@
     <Compile Include="Reparation.Designer.cs">
       <DependentUpon>Reparation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Statistiques.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statistiques.Designer.cs">
+      <DependentUpon>Statistiques.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Base.resx">
       <DependentUpon>Base.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +152,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Statistiques.resx">
+      <DependentUpon>Statistiques.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

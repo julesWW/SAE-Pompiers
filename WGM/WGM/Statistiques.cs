@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pinpon;
 using System.Net;
-using System.Windows.Forms.DataVisualization.Charting;
 //using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Statistiques

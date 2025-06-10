@@ -82,7 +82,10 @@ namespace dashBoard
             if (ID.ShowDialog() == DialogResult.OK)
             {
                 frmNouvMission nouvM = new frmNouvMission();
-                nouvM.ShowDialog();
+                if(nouvM.ShowDialog() == DialogResult.OK)
+                {
+                    chkEnCours_CheckedChanged(sender,e);
+                }
             }
         }
 

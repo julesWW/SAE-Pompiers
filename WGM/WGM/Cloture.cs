@@ -168,7 +168,11 @@ namespace Mission
         }
         private void MajEngin(String s, String preced, String tag)
         {
-            if(preced!=null)
+            if (s==preced)
+            {
+                return;
+            }
+            if (preced!=null)
             {
                 enginAReparer[preced] = true;
             }

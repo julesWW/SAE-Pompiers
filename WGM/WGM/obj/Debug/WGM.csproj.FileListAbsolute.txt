@@ -153,3 +153,4 @@ d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\Personnel.frmI
 d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\Mission.uscMissions.resources
 d:\Users\Jules\Documents\SAE\my-awesome-project\WGM\WGM\obj\Debug\WGM.csproj.Up2Date
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\Personnel.uscPersonnel.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\WGM\WGM\obj\Debug\Statistiques.uscStats.resources
