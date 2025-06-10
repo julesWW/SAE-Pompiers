@@ -22,29 +22,11 @@ namespace Mission
     {
         int id;
         bool enCours;
-        //  SQLiteConnection connec;
         string mission;
         string[] datesHeures;
         string[] dates;
         public uscMissions()
         {
-            /*InitializeComponent();
-            connec = Connexion.Connec;
-
-            DataTable dt = connec.GetSchema("Tables");
-           // string liste = "";
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                string nomTable = dt.Rows[i][2].ToString();
-                string req = "select * from " + nomTable;
-                SQLiteCommand cmd = new SQLiteCommand(req, connec);
-                SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
-                da.Fill(MesDatas.DsGlobal, nomTable);
-                 // liste = liste + nomTable + "\n";
-            }
-            //  MessageBox.Show(liste);
-            Connexion.FermerConnexion();*/
-
         }
         public uscMissions(int idMission)
         {

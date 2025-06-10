@@ -11,3 +11,4 @@ C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Missio
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Mission\Mission\obj\Debug\Mission.dll
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Mission\Mission\obj\Debug\Mission.pdb
 C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Mission\Mission\obj\Debug\Mission.frmCR.resources
+C:\Users\Light\OneDrive\Pictures\cours Windows\A21\SAE\my-awesome-project\Mission\Mission\obj\Debug\Personnel.frmIdentification.resources

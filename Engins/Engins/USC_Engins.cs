@@ -28,27 +28,17 @@ namespace Engins
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(requete, connection);
             try
             {
-                //Enlever ces lignes pour l'implémentation aua forulaire principal
-                connection.Open();
-                adapter.Fill(ds, "Caserne");
-                requete = "SELECT * FROM Engin";
-                adapter = new SQLiteDataAdapter(requete, connection);
-                adapter.Fill(ds, "Engin");
-                connection.Close();
-                //Là
+                
 
-                //DataSet ds = MesDatas.DsGlobal;
+                DataSet ds = MesDatas.DsGlobal;
 
                 //Contraintes
-                ForeignKeyConstraint FK_Caserne = new ForeignKeyConstraint("FK_Caserne", ds.Tables["Caserne"].Columns["id"], ds.Tables["Engin"].Columns["idCaserne"]);
-                ds.Tables["Engin"].Constraints.Add(FK_Caserne);
-
-                ds.Relations.Add("relEnginCaserne", ds.Tables["Caserne"].Columns["id"], ds.Tables["Engin"].Columns["idCaserne"]);
+             
                 BindingSource bsCaserne = new BindingSource();
                 bsCaserne.DataSource = ds.Tables["Caserne"];
                 cboChoixCaserne.DataSource = bsCaserne;
                 cboChoixCaserne.DisplayMember = "Nom";
-                cboChoixCaserne.ValueMember = "id"; 
+                cboChoixCaserne.ValueMember = "id";
 
                 bsEngin = new BindingSource();
                 bsEngin.DataSource = bsCaserne;
@@ -60,14 +50,14 @@ namespace Engins
 
                 //Affichage de la valeur de la colonne 2 ligne 1 de dtEngin dans une messagebox
                 MaJ(null, null);
-                
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
 
-          
+
         }
 
         public void MaJ(object sender, EventArgs e)
@@ -75,12 +65,12 @@ namespace Engins
             DataRowView row = bsEngin.Current as DataRowView;
             if (row != null)
             {
-                lblNumVal.Text = row["idCaserne"] + "-" + row["codeTypeEngin"] + "-" +row["numero"];
+                lblNumVal.Text = row["idCaserne"] + "-" + row["codeTypeEngin"] + "-" + row["numero"];
                 String[] date = row["dateReception"].ToString().Split('-');
                 lblDateReceptVal.Text = date[1] + "/" + date[2] + "/" + date[0];
                 cboMission.Checked = Convert.ToBoolean(row["enMission"]);
                 cboPanne.Checked = Convert.ToBoolean(row["enPanne"]);
-                var rm = Engins.Properties.Resources.ResourceManager;
+                var rm = WGM.Properties.Resources.ResourceManager;
                 pboEngin.BackgroundImage = rm.GetObject(row["codeTypeEngin"].ToString()) as Image;
 
             }
@@ -88,7 +78,7 @@ namespace Engins
             {
                 lblNumVal.Text = "Aucune ligne sélectionnée";
             }
-            
+
 
         }
         private void cboChoixCaserne_SelectedIndexChanged(object sender, EventArgs e)
@@ -118,8 +108,36 @@ namespace Engins
             MaJ(null, null);
         }
 
-        
+        private void USC_Engins_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.Width > pnlBoutons.Width)
+            {
+                pnlBoutons.Left = (this.Width - pnlBoutons.Width) / 2;
+            }
+            if (this.Width > lblEngin.Width)
+            {
+                lblEngin.Left = (int)((this.Width - lblEngin.Width) / 2.0);
+            }
+            lblChoixCaserne.Left = (int)((grpChoixCaserne.Width - lblChoixCaserne.Width-cboChoixCaserne.Width-50) / 2.0);
+            cboChoixCaserne.Left = lblChoixCaserne.Right+50;
 
-        
+
+            if ((grpInfo.Width / 2.7333333) / 1.3888888888 < grpInfo.Height / 1.5)
+            {
+                pboEngin.Width = (int)(grpInfo.Width / 2.7333333);
+                pboEngin.Height = (int)(pboEngin.Width / 1.388888888);
+            }
+            else
+            {
+                pboEngin.Height = (int)(grpInfo.Height/1.592592592592);
+                pboEngin.Width = (int)(pboEngin.Height * 1.38888888888);
+            }
+            pboEngin.Left = grpInfo.Width-pboEngin.Width-20;
+        }
+
+        private void USC_Engins_Load(object sender, EventArgs e)
+        {
+            USC_Engins_SizeChanged(sender,e);
+        }
     }
 }

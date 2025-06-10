@@ -38,7 +38,6 @@ namespace WGM
             connec = Connexion.Connec;
 
             DataTable dt = connec.GetSchema("Tables");
-            //  string liste = "";
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 string nomTable = dt.Rows[i][2].ToString();
@@ -46,9 +45,7 @@ namespace WGM
                 SQLiteCommand cmd = new SQLiteCommand(req, connec);
                 SQLiteDataAdapter da = new SQLiteDataAdapter(cmd);
                 da.Fill(MesDatas.DsGlobal, nomTable);
-                //  liste = liste + nomTable + "\n";
             }
-            //  MessageBox.Show(liste);
             Connexion.FermerConnexion();
 
             ForeignKeyConstraint FK_Caserne = new ForeignKeyConstraint("FK_Caserne", MesDatas.DsGlobal.Tables["Caserne"].Columns["id"], MesDatas.DsGlobal.Tables["Engin"].Columns["idCaserne"]);

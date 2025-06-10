@@ -44,6 +44,7 @@ namespace Personnel
         private void btnPlus_Click(object sender, EventArgs e)
         {
             frmIdentification ID = new frmIdentification();
+            ID.StartPosition = FormStartPosition.CenterParent;
             if (ID.ShowDialog() == DialogResult.OK)
             {
                 grpPlus.Visible = true;
@@ -74,14 +75,13 @@ namespace Personnel
             cboGrade.Visible = false;
             txtTelephone.Visible = false;
             txtBip.Visible = false;
+            btnEdit.Visible = false;
             cboPompier_SelectedIndexChanged(sender, e);
         }
 
         private void uscPersonnel_Load(object sender, EventArgs e)
         {
-            MesDatas.DsGlobal.Relations.Add("relAffectationCaserne", 
-                MesDatas.DsGlobal.Tables["Caserne"].Columns["id"], 
-                MesDatas.DsGlobal.Tables["Affectation"].Columns["idCaserne"]);
+            uscPersonnel_SizeChanged(sender, e);
             BindingSource bsCaserne = new BindingSource();
 
             bsCaserne.DataSource = MesDatas.DsGlobal.Tables["Caserne"];
@@ -159,7 +159,7 @@ namespace Personnel
                             break;
                     }
                     lblSexe.Text = "Sexe : " +sexe;
-                    var rm = Properties.Resources.ResourceManager;
+                    var rm = Personnel.Properties.Resources.ResourceManager;
                     pboGrade.BackgroundImage = rm.GetObject(dr["codeGrade"].ToString()) as Image;
                     txtGrade.Text = dr["codeGrade"].ToString();
                     lblTelephone.Text = "Téléphone : " + dr["portable"].ToString();
@@ -185,7 +185,7 @@ namespace Personnel
                     string[] datesN =dr["dateNaissance"].ToString().Split('-');
                     lblNaissance.Text = ("Date de naissance : " + datesN[1] + "/" + datesN[2] + "/" + datesN[0]);
                     string[] datesE = dr["dateEmbauche"].ToString().Split('-');
-                    lblEmbauche.Text = ("Date de naissance : " + datesE[1] + "/" + datesE[2] + "/" + datesE[0]);
+                    lblEmbauche.Text = ("Date d'embauche : " + datesE[1] + "/" + datesE[2] + "/" + datesE[0]);
 
 
                     cboGrade.SelectedValue = dr["codeGrade"];
@@ -273,7 +273,12 @@ namespace Personnel
                 }
                 catch
                 {
-                    MessageBox.Show("La caserne ne peut pas être changé 2 fois le même jour");
+                    MessageBox.Show("La caserne ne peut pas être changé 2 fois le même jour","Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    // annulation de la transaction
+                    transac.Rollback();
+                    MessageBox.Show("Transaction annulée !\n");
+                    cboPompier_SelectedIndexChanged(sender, e);
+                    return;
                 }
 
 
@@ -316,7 +321,7 @@ namespace Personnel
                     MesDatas.DsGlobal.Tables["Affectation"].Rows.Add(newRow);
 
                 }
-                var rm = Properties.Resources.ResourceManager;
+                var rm = Personnel.Properties.Resources.ResourceManager;
                 pboGrade.BackgroundImage = rm.GetObject(cboGrade.SelectedValue.ToString()) as Image;
 
 
@@ -371,6 +376,21 @@ namespace Personnel
                     e.Handled = true;
                 }
             }
+        }
+
+        private void uscPersonnel_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.Width > grpGeneral.Width)
+            {
+                grpGeneral.Left = (int)((this.Width - grpGeneral.Width) / 2.0);
+                grpPlus.Left = (int)((this.Width - grpPlus.Width) / 2.0);
+            }
+            if (this.Width > pnlTitre.Width)
+            {
+                pnlTitre.Left = (int)((this.Width - pnlTitre.Width) / 2.0);
+            }
+            lblPersonnel.Left = (int)((pnlTitre.Width - lblPersonnel.Width) / 2.0);
+            btnPlus.Left = (int)(this.Width - btnPlus.Width - grpPlus.Left);
         }
     }
 }

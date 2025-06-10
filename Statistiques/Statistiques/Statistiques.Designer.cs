@@ -136,15 +136,16 @@
             // 
             // flpCategories
             // 
+            this.flpCategories.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flpCategories.AutoScroll = true;
             this.flpCategories.Controls.Add(this.pnlParCaserne);
             this.flpCategories.Controls.Add(this.pnlInterCaserne);
-            this.flpCategories.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpCategories.Location = new System.Drawing.Point(3, 57);
             this.flpCategories.Name = "flpCategories";
             this.flpCategories.Size = new System.Drawing.Size(800, 497);
             this.flpCategories.TabIndex = 3;
-            this.flpCategories.WrapContents = false;
             // 
             // pnlInterCaserne
             // 
