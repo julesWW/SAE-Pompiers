@@ -8,7 +8,7 @@ L’objectif était de développer une **application WinForms** permettant de **
 ## 👥 Organisation
 
 Projet réalisé en **trinôme** avec :  
-- **[Liam Guilleux-Riff](https://github.com/Saduso)**
+- **[Liam Guilleux--Riff](https://github.com/Saduso)**
 - **[Lohan Marchand](https://github.com/Lohan-Marchand)**
 
 <br>
